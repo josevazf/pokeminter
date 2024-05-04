@@ -32,7 +32,7 @@ export const Home = () => {
   const pokemonFilter = (name: string) => {
     //var filteredPokemons = [];
 
-    if (name == "") {
+    if (name === "") {
       getPokemons();
       return;
     }
