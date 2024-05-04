@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Box from '@mui/material/Box';
+import React, { useState } from "react";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea } from '@mui/material';
 import { typeColors } from '../../utils/typeColors';
 import PokeModal from "../PokeModal/PokeModal";
 

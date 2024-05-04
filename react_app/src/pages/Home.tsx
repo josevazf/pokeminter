@@ -9,6 +9,7 @@ export const Home = () => {
   const [pokemons, setPokemons] = useState([]);
   useEffect(() => {
     getPokemons();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   var pokemonLimit = 151;
