@@ -7,9 +7,9 @@ import { CardActionArea } from '@mui/material';
 import { typeColors } from '../../utils/typeColors';
 import PokeModal from "../PokeModal/PokeModal";
 
-export default function PokeCard({ name, image, types, id }: { name: string, image: string, types: any[], id: number }) {
+export default function PokeCard({ pokemons, name, image, types, id }: { pokemons: any[], name: string, image: string, types: any[], id: number }) {
   const [showModal, setShowModal] = useState(false)
-  const handleClose = () => {setShowModal(false)}
+  const handleClose = () => { setShowModal(false) }
 
   // Fetch pokemon types
   const fetchTypes = () => {
@@ -25,13 +25,13 @@ export default function PokeCard({ name, image, types, id }: { name: string, ima
 
   return (
     <>
-      <Card sx={{ minWidth: 200, maxWidth: 250, height: 285 }} onClick={() => setShowModal(true)}>
+      <Card className='card' variant="outlined" sx={{ minWidth: 200, maxWidth: 250, height: 285, borderColor: types && types[0] ? typeColors[types[0].type.name.toLowerCase() as keyof typeof typeColors] : undefined }} onClick={() => setShowModal(true)}>
         <CardActionArea>
           <div style={{ textAlign: "right", paddingTop: "10px", paddingRight: "10px" }}>
-              <Typography gutterBottom variant="caption">
-                {`#${String(id).padStart(3, '0')}`}
-              </Typography>
-            </div>
+            <Typography gutterBottom variant="caption">
+              {`#${String(id).padStart(3, '0')}`}
+            </Typography>
+          </div>
           <CardMedia
             component="img"
             sx={{ height: 150, objectFit: "scale-down" }}
@@ -45,12 +45,13 @@ export default function PokeCard({ name, image, types, id }: { name: string, ima
             <Typography variant="body2" align='center'>
               <div className='pokeType'>
                 {fetchTypes().split(" ").map((type: string, index: number) => (
-                  <div 
-                    className='group' 
-                    key={index} 
-                    style={{ 
+                  <div
+                    className='group'
+                    key={index}
+                    style={{
                       /* @ts-ignore */
-                      backgroundColor: typeColors[type.toLowerCase()], textTransform: 'capitalize' }}>
+                      backgroundColor: typeColors[type.toLowerCase()], textTransform: 'capitalize'
+                    }}>
                     {type}
                   </div>
                 ))}
@@ -58,13 +59,8 @@ export default function PokeCard({ name, image, types, id }: { name: string, ima
             </Typography>
           </CardContent>
         </CardActionArea>
-  {/*       <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-        </CardActions> */}
       </Card>
-      {showModal && <PokeModal name={name} image={image} id={id} handleClose={handleClose} types={[]}/>}
+      {showModal && <PokeModal pokemons={pokemons} id={id} handleClose={handleClose} />}
     </>
   );
 }

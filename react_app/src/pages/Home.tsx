@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar/Navbar";
 import axios from "axios";
 import PokeCard from "../components/PokeCard/PokeCard";
 import { Box, Container, Grid } from "@mui/material";
-//import typeColors from "../utils/typeColors";
 
 export const Home = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -36,39 +35,31 @@ export const Home = () => {
       getPokemons();
       return;
     }
-    /*     else {
-          getPokemons();
-          for (var i in pokemons) {
-            if (pokemons[i].data.name.includes(name.toLowerCase())) {
-              filteredPokemons.push(pokemons[i]);
-            }
-          }
-        } */
     var filteredPokemons = pokemons.filter((pokemon: any) =>
       pokemon.data.name.includes(name.toLowerCase())
     );
-
     setPokemons(filteredPokemons);
   };
 
   return (
-    <div style={{ margin: 'auto' }}>
+    <div style={{ margin: 'auto', maxWidth: '80%' }}>
       <Navbar pokemonFilter={pokemonFilter} />
-      <div style={{ margin: 'auto', maxWidth: '70%' }}>
+      <div style={{ margin: 'auto', maxWidth: '100%' }}>
         <Container maxWidth={false}>
           <Grid container component="div" spacing={5}>
             {pokemons.length === 0 ? (
               <Grid item xs={12} sm={8} md={6} lg={4} xl={2}>
-                <PokeCard name="empty" image="/assets/pokemon_who.png" types={[]} id={0} />
+                <PokeCard pokemons={[]} name="empty" image="/assets/pokemon_who.png" types={[]} id={0} />
               </Grid>
             ) : (
               pokemons.map((pokemon: any, key: number) => (
                 <Grid item xs={12} sm={8} md={6} lg={4} xl={2} key={key}>
                   <Box>
                     <PokeCard
+                      pokemons={pokemons}
                       name={pokemon.data.name}
                       id={pokemon.data.id}
-                      image={pokemon.data.sprites.other.dream_world.front_default}
+                      image={pokemon.data.sprites.other['official-artwork'].front_default}
                       types={pokemon.data.types}
                     />
                   </Box>
