@@ -1,6 +1,6 @@
 import React from 'react';
 import './PokeModal.style.css'
-import { PokmonDetails } from '../../screens/PokeDetails';
+import { PokemonDetails } from '../../screens/PokeDetails/PokeDetails';
 
 const PokeModal = ({pokemons, pokemonSpecies, id, handleClose}: { pokemons: any[], pokemonSpecies: any[], id: number, handleClose: () => void}) => {
 
@@ -13,7 +13,7 @@ const PokeModal = ({pokemons, pokemonSpecies, id, handleClose}: { pokemons: any[
   return (
     <div className="modal-backdrop" onClick={handleBackdropClick}>
         <div className="modal">
-          <PokmonDetails pokemons={pokemons} pokemonSpecies={pokemonSpecies} id={id - 1}/>
+          <PokemonDetails pokemons={pokemons} pokemonSpecies={pokemonSpecies} id={id - 1}/>
           {/* <button className="close-btn" onClick={()=> handleClose()}>Close</button> */}
         </div>
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import { PokMonDetails } from "../../components/PokeDetails/PokeDetails";
+import { PokeMonDetails } from "../../components/PokeDetails/PokeDetails";
 
-export const PokmonDetails = ( {pokemons, pokemonSpecies, id}: { pokemons: any[], pokemonSpecies: any[], id: number} ): JSX.Element => {
+export const PokemonDetails = ( {pokemons, pokemonSpecies, id}: { pokemons: any[], pokemonSpecies: any[], id: number} ): JSX.Element => {
   return (
-    <PokMonDetails
+    <PokeMonDetails
       pokemons={pokemons}
       pokemonSpecies={pokemonSpecies}
       id={id}

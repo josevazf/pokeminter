@@ -1,1 +1,0 @@
-export { Weight } from "./Weight";

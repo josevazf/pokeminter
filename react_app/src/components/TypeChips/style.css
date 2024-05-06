@@ -23,15 +23,15 @@
 }
 
 .type-chips.psychic {
-  background-color: var(--pokmon-typepsychic);
+  background-color: var(--pokemon-typepsychic);
 }
 
 .type-chips.electric {
-  background-color: var(--pokmon-typeelectric);
+  background-color: var(--pokemon-typeelectric);
 }
 
 .type-chips.dark {
-  background-color: var(--pokmon-typedark);
+  background-color: var(--pokemon-typedark);
 }
 
 .type-chips.unknown {
@@ -39,61 +39,61 @@
 }
 
 .type-chips.bug {
-  background-color: var(--pokmon-typebug);
+  background-color: var(--pokemon-typebug);
 }
 
 .type-chips.fairy {
-  background-color: var(--pokmon-typefairy);
+  background-color: var(--pokemon-typefairy);
 }
 
 .type-chips.rock {
-  background-color: var(--pokmon-typerock);
+  background-color: var(--pokemon-typerock);
 }
 
 .type-chips.dragon {
-  background-color: var(--pokmon-typedragon);
+  background-color: var(--pokemon-typedragon);
 }
 
 .type-chips.water {
-  background-color: var(--pokmon-typewater);
+  background-color: var(--pokemon-typewater);
 }
 
 .type-chips.flying {
-  background-color: var(--pokmon-typeflying);
+  background-color: var(--pokemon-typeflying);
 }
 
 .type-chips.ghost {
-  background-color: var(--pokmon-typeghost);
+  background-color: var(--pokemon-typeghost);
 }
 
 .type-chips.fighting {
-  background-color: var(--pokmon-typefighting);
+  background-color: var(--pokemon-typefighting);
 }
 
 .type-chips.fire {
-  background-color: var(--pokmon-typefire);
+  background-color: var(--pokemon-typefire);
 }
 
 .type-chips.ice {
-  background-color: var(--pokmon-typeice);
+  background-color: var(--pokemon-typeice);
 }
 
 .type-chips.poison {
-  background-color: var(--pokmon-typepoison);
+  background-color: var(--pokemon-typepoison);
 }
 
 .type-chips.normal {
-  background-color: var(--pokmon-typenormal);
+  background-color: var(--pokemon-typenormal);
 }
 
 .type-chips.grass {
-  background-color: var(--pokmon-typegrass);
+  background-color: var(--pokemon-typegrass);
 }
 
 .type-chips.ground {
-  background-color: var(--pokmon-typeground);
+  background-color: var(--pokemon-typeground);
 }
 
 .type-chips.steel {
-  background-color: var(--pokmon-typesteel);
+  background-color: var(--pokemon-typesteel);
 }

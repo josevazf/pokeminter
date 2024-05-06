@@ -1,1 +1,0 @@
-export { TypeChips } from "./TypeChips";

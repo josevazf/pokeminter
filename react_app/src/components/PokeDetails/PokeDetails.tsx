@@ -1,14 +1,13 @@
 // @ts-nocheck
 import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
-//import { ArrowBack } from "../../icons/ArrowBack";
-import { ChevronLeft } from "../../icons/ChevronLeft";
-import { ChevronRight } from "../../icons/ChevronRight";
-import { Pokeball } from "../../icons/Pokeball";
-import { Straighten } from "../../icons/Straighten";
-import { Weight } from "../../icons/Weight";
-import { Silhouette } from "../Silhouette";
-import { TypeChips } from "../TypeChips";
+import { ChevronLeft } from "../../icons/ChevronLeft/ChevronLeft";
+import { ChevronRight } from "../../icons/ChevronRight/ChevronRight";
+import { Pokeball } from "../../icons/Pokeball/Pokeball";
+import { Straighten } from "../../icons/Straighten/Straighten";
+import { Weight } from "../../icons/Weight/Weight";
+import { Silhouette } from "../Silhouette/Silhouette";
+import { TypeChips } from "../TypeChips/TypeChips";
 import { typeColors } from "../../utils/typeColors";
 import { Button } from "@mui/material";
 import "./style.css";
@@ -19,7 +18,7 @@ interface Props {
   id: number;
 }
 
-export const PokMonDetails = ({
+export const PokeMonDetails = ({
   pokemons,
   pokemonSpecies,
   id,
@@ -188,7 +187,7 @@ export const PokMonDetails = ({
   );
 };
 
-PokMonDetails.propTypes = {
+PokeMonDetails.propTypes = {
   pokemons: PropTypes.any,
   pokemonSpecies: PropTypes.any,
   id: PropTypes.number,
