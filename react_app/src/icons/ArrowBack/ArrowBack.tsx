@@ -7,60 +7,18 @@ interface Props {
 export const ArrowBack = ({ className }: Props): JSX.Element => {
   return (
     <svg
-      className={`arrow-back ${className}`}
+      className={`arrow-back-1 ${className}`}
       fill="none"
-      height="32"
-      viewBox="0 0 32 32"
-      width="32"
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g className="g" filter="url(#filter0_d_1013_491)">
-        <path
-          className="path"
-          d="M14.8999 25.9666L5.63325 16.6999C5.52214 16.5888 5.44436 16.4777 5.39992 16.3666C5.35547 16.2555 5.33325 16.1333 5.33325 15.9999C5.33325 15.8666 5.35547 15.7444 5.39992 15.6333C5.44436 15.5222 5.52214 15.4111 5.63325 15.2999L14.9333 5.99994C15.111 5.82216 15.3333 5.73328 15.5999 5.73328C15.8666 5.73328 16.0999 5.83328 16.2999 6.03328C16.4999 6.23328 16.5999 6.46661 16.5999 6.73328C16.5999 6.99994 16.4999 7.23328 16.2999 7.43328L8.73325 14.9999H25.2666C25.5555 14.9999 25.7944 15.0944 25.9833 15.2833C26.1721 15.4722 26.2666 15.7111 26.2666 15.9999C26.2666 16.2888 26.1721 16.5277 25.9833 16.7166C25.7944 16.9055 25.5555 16.9999 25.2666 16.9999H8.73325L16.3333 24.5999C16.511 24.7777 16.5999 24.9999 16.5999 25.2666C16.5999 25.5333 16.4999 25.7666 16.2999 25.9666C16.0999 26.1666 15.8666 26.2666 15.5999 26.2666C15.3333 26.2666 15.0999 26.1666 14.8999 25.9666Z"
-          fill="white"
-        />
-      </g>
-      <defs className="defs">
-        <filter
-          className="filter"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-          height="28.5333"
-          id="filter0_d_1013_491"
-          width="28.9333"
-          x="1.33325"
-          y="2.73328"
-        >
-          <feFlood className="fe-flood" floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            className="fe-color-matrix"
-            in="SourceAlpha"
-            result="hardAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          />
-          <feMorphology
-            className="fe-morphology"
-            in="SourceAlpha"
-            operator="dilate"
-            radius="1"
-            result="effect1_dropShadow_1013_491"
-          />
-          <feOffset className="fe-offset" dy="1" />
-          <feGaussianBlur className="fe-gaussian-blur" stdDeviation="1.5" />
-          <feComposite className="fe-composite" in2="hardAlpha" operator="out" />
-          <feColorMatrix className="fe-color-matrix" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-          <feBlend className="fe-blend" in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1013_491" />
-          <feBlend
-            className="fe-blend"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_1013_491"
-            mode="normal"
-            result="shape"
-          />
-        </filter>
-      </defs>
+      <path
+        className="path"
+        d="M22.35 38.95L8.45 25.05C8.28333 24.8833 8.16667 24.7167 8.1 24.55C8.03333 24.3833 8 24.2 8 24C8 23.8 8.03333 23.6167 8.1 23.45C8.16667 23.2833 8.28333 23.1167 8.45 22.95L22.4 9C22.6667 8.73333 23 8.6 23.4 8.6C23.8 8.6 24.15 8.75 24.45 9.05C24.75 9.35 24.9 9.7 24.9 10.1C24.9 10.5 24.75 10.85 24.45 11.15L13.1 22.5H37.9C38.3333 22.5 38.6917 22.6417 38.975 22.925C39.2583 23.2083 39.4 23.5667 39.4 24C39.4 24.4333 39.2583 24.7917 38.975 25.075C38.6917 25.3583 38.3333 25.5 37.9 25.5H13.1L24.5 36.9C24.7667 37.1667 24.9 37.5 24.9 37.9C24.9 38.3 24.75 38.65 24.45 38.95C24.15 39.25 23.8 39.4 23.4 39.4C23 39.4 22.65 39.25 22.35 38.95Z"
+        fill="#1D1D1D"
+      />
     </svg>
   );
 };

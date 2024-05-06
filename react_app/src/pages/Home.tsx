@@ -62,7 +62,7 @@ export const Home = () => {
           <Grid container component="div" spacing={5}>
             {pokemons.length === 0 ? (
               <Grid item>
-                <PokeCard pokemons={[]} pokemonSpecies={[]} name="Not found" image="/assets/empty.png" types={[]} id={0} />
+                <PokeCard pokemons={[]} pokemonSpecies={[]} name="Not found" image="/assets/empty.png" types={[]} id={404} />
               </Grid>
             ) : (
               pokemons.map((pokemon: any, key: number) => (
