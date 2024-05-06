@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './PokeModal.style.css'
+import { PokmonDetails } from '../../screens/PokeDetails';
 
-const PokeModal = ({pokemons, id, handleClose}: { pokemons: any[], id: number, handleClose: () => void}) => {
+const PokeModal = ({pokemons, pokemonSpecies, id, handleClose}: { pokemons: any[], pokemonSpecies: any[], id: number, handleClose: () => void}) => {
   const [currentId, setCurrentId] = useState(id);
 
   useEffect(() => {
@@ -29,14 +30,10 @@ const PokeModal = ({pokemons, id, handleClose}: { pokemons: any[], id: number, h
   return (
     <div className="modal-backdrop" onClick={handleBackdropClick}>
         <div className="modal">
-           <div className="arrow-btn left" onClick={handlePrev}>{'<'}</div>
-            <img className="modal-img" src={pokemons[currentId - 1].data.sprites.other['official-artwork'].front_default} alt="profile pic" />
-            <div className="arrow-btn right" onClick={handleNext}>{'>'}</div>
-            <div className="modal-body">
-               <div className='modal-name'>{pokemons[currentId - 1].data.name}</div>
-               <div className='modal-role'>{currentId}</div>
-            </div>
-            <button className="close-btn" onClick={()=> handleClose()}>Close</button>
+          <PokmonDetails pokemons={pokemons} pokemonSpecies={pokemonSpecies} id={currentId -1 }/>
+          <div className="arrow-btn left" onClick={handlePrev}>{'<'}</div>
+          <div className="arrow-btn right" onClick={handleNext}>{'>'}</div>
+          <button className="close-btn" onClick={()=> handleClose()}>Close</button>
         </div>
     </div>
   );

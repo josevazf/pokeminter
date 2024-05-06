@@ -9,31 +9,18 @@
 }
 
 .modal { 
-  position: relative; /* Add this */
-  max-width: 480px;
-  height: 600px;
+  position: relative;
+  max-width: 360px;
+  height: 640;
   margin: 150px auto;
   background-color: #ffff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 0;
-}
-
-.modal-img{
-  height: 100px;
-  width: 100px;
-  margin: 4rem 0 2rem;
 }
 
 .modal-name {
   font-size: 2rem;
   font-weight: 600;
-}
-
-.modal-role{
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  font-style: italic;
 }
 
 .close-btn{

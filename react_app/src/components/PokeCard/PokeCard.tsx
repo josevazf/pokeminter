@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 import { typeColors } from '../../utils/typeColors';
 import PokeModal from "../PokeModal/PokeModal";
 
-export default function PokeCard({ pokemons, name, image, types, id }: { pokemons: any[], name: string, image: string, types: any[], id: number }) {
+export default function PokeCard({ pokemons, pokemonSpecies, name, image, types, id }: { pokemons: any[], pokemonSpecies: any[],  name: string, image: string, types: any[], id: number }) {
   const [showModal, setShowModal] = useState(false)
   const handleClose = () => { setShowModal(false) }
 
@@ -25,7 +25,15 @@ export default function PokeCard({ pokemons, name, image, types, id }: { pokemon
 
   return (
     <>
-      <Card className='card' variant="outlined" sx={{ minWidth: 200, maxWidth: 250, height: 285, borderColor: types && types[0] ? typeColors[types[0].type.name.toLowerCase() as keyof typeof typeColors] : undefined }} onClick={() => setShowModal(true)}>
+      <Card className='card'
+        variant="outlined"
+        sx={{
+          minWidth: 200,
+          maxWidth: 250,
+          height: 285,
+          borderColor: types && types[0] ? typeColors[types[0].type.name.toLowerCase() as keyof typeof typeColors] : undefined
+        }}
+        onClick={() => setShowModal(true)}>
         <CardActionArea>
           <div style={{ textAlign: "right", paddingTop: "10px", paddingRight: "10px" }}>
             <Typography gutterBottom variant="caption">
@@ -60,7 +68,7 @@ export default function PokeCard({ pokemons, name, image, types, id }: { pokemon
           </CardContent>
         </CardActionArea>
       </Card>
-      {showModal && <PokeModal pokemons={pokemons} id={id} handleClose={handleClose} />}
+      {showModal && <PokeModal pokemons={pokemons} pokemonSpecies={pokemonSpecies} id={id} handleClose={handleClose} />}
     </>
   );
 }

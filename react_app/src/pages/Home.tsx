@@ -6,6 +6,8 @@ import { Box, Container, Grid } from "@mui/material";
 
 export const Home = () => {
   const [pokemons, setPokemons] = useState([]);
+  const [pokemonSpecies, setPokemonSpecies] = useState([]);
+
   useEffect(() => {
     getPokemons();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -15,15 +17,24 @@ export const Home = () => {
 
   // Gets all pokemons from API up to `pokemonLimit`
   const getPokemons = () => {
-    var endpoints = [];
+    var pokeEndpoints = [];
+    var pokeSpeciesEndpoints = []
+
     for (var i = 1; i <= pokemonLimit; i++) {
-      endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`)
+      pokeEndpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`)
+      pokeSpeciesEndpoints.push(`https://pokeapi.co/api/v2/pokemon-species/${i}/`)
     }
-    axios.all(endpoints.map((endpoint) =>
+    axios.all(pokeEndpoints.map((endpoint) =>
       axios
         .get(endpoint)))
       /* @ts-ignore */
       .then((res) => setPokemons(res))
+      .catch((err) => console.log(err));
+    axios.all(pokeSpeciesEndpoints.map((endpoint) =>
+      axios
+        .get(endpoint)))
+      /* @ts-ignore */
+      .then((res) => setPokemonSpecies(res))
       .catch((err) => console.log(err));
   };
 
@@ -38,18 +49,22 @@ export const Home = () => {
     var filteredPokemons = pokemons.filter((pokemon: any) =>
       pokemon.data.name.includes(name.toLowerCase())
     );
+    var filteredPokemonSpecies = pokemonSpecies.filter((pokemonSpecies: any) =>
+      pokemonSpecies.data.name.includes(name.toLowerCase())
+    );
     setPokemons(filteredPokemons);
+    setPokemonSpecies(filteredPokemonSpecies);
   };
 
   return (
+    <Container style={{ maxWidth: '80%' }}>
     <div style={{ margin: 'auto', maxWidth: '80%' }}>
-      <Navbar pokemonFilter={pokemonFilter} />
-      <div style={{ margin: 'auto', maxWidth: '100%' }}>
-        <Container maxWidth={false}>
+      <Navbar pokemonFilter={pokemonFilter}  />
+        <Container maxWidth={false} style={{ margin: 'auto'}}>
           <Grid container component="div" spacing={5}>
             {pokemons.length === 0 ? (
-              <Grid item xs={12} sm={8} md={6} lg={4} xl={2}>
-                <PokeCard pokemons={[]} name="empty" image="/assets/pokemon_who.png" types={[]} id={0} />
+              <Grid item>
+                <PokeCard pokemons={[]} pokemonSpecies={[]} name="empty" image="/assets/pokemon_who.png" types={[]} id={0} />
               </Grid>
             ) : (
               pokemons.map((pokemon: any, key: number) => (
@@ -57,6 +72,8 @@ export const Home = () => {
                   <Box>
                     <PokeCard
                       pokemons={pokemons}
+                      /* @ts-ignore */
+                      pokemonSpecies={pokemonSpecies}
                       name={pokemon.data.name}
                       id={pokemon.data.id}
                       image={pokemon.data.sprites.other['official-artwork'].front_default}
@@ -66,9 +83,9 @@ export const Home = () => {
                 </Grid>
               ))
             )}
-          </Grid>-
+          </Grid>
         </Container>
-      </div>
     </div>
+    </Container>
   )
 }

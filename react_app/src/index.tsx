@@ -3,6 +3,7 @@ import './polyfills';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import "./styleguide.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -14,18 +15,16 @@ import {
   mainnet,
   optimism,
   polygon,
+  polygonMumbai,
   sepolia,
 } from 'wagmi/chains';
 
 const config = getDefaultConfig({
-  appName: 'RainbowKit demo',
-  projectId: 'YOUR_PROJECT_ID',
+  appName: 'PokéMinter',
+  projectId: '779d8ace77c78775416b20ddfec0336f',
   chains: [
-    mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    base,
+    sepolia,
+    polygonMumbai,
     ...(process.env.REACT_APP_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
 });

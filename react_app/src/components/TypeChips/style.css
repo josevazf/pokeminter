@@ -1,0 +1,99 @@
+.type-chips {
+  align-items: flex-start;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 2px 8px;
+  position: relative;
+}
+
+.type-chips .type {
+  color: var(--grayscalewhite);
+  font-family: var(--header-subtitle-3-font-family);
+  font-size: var(--header-subtitle-3-font-size);
+  font-style: var(--header-subtitle-3-font-style);
+  font-weight: var(--header-subtitle-3-font-weight);
+  letter-spacing: var(--header-subtitle-3-letter-spacing);
+  line-height: var(--header-subtitle-3-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.type-chips.psychic {
+  background-color: var(--pokmon-typepsychic);
+}
+
+.type-chips.electric {
+  background-color: var(--pokmon-typeelectric);
+}
+
+.type-chips.dark {
+  background-color: var(--pokmon-typedark);
+}
+
+.type-chips.unknown {
+  background-color: var(--grayscalemedium);
+}
+
+.type-chips.bug {
+  background-color: var(--pokmon-typebug);
+}
+
+.type-chips.fairy {
+  background-color: var(--pokmon-typefairy);
+}
+
+.type-chips.rock {
+  background-color: var(--pokmon-typerock);
+}
+
+.type-chips.dragon {
+  background-color: var(--pokmon-typedragon);
+}
+
+.type-chips.water {
+  background-color: var(--pokmon-typewater);
+}
+
+.type-chips.flying {
+  background-color: var(--pokmon-typeflying);
+}
+
+.type-chips.ghost {
+  background-color: var(--pokmon-typeghost);
+}
+
+.type-chips.fighting {
+  background-color: var(--pokmon-typefighting);
+}
+
+.type-chips.fire {
+  background-color: var(--pokmon-typefire);
+}
+
+.type-chips.ice {
+  background-color: var(--pokmon-typeice);
+}
+
+.type-chips.poison {
+  background-color: var(--pokmon-typepoison);
+}
+
+.type-chips.normal {
+  background-color: var(--pokmon-typenormal);
+}
+
+.type-chips.grass {
+  background-color: var(--pokmon-typegrass);
+}
+
+.type-chips.ground {
+  background-color: var(--pokmon-typeground);
+}
+
+.type-chips.steel {
+  background-color: var(--pokmon-typesteel);
+}
