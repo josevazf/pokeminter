@@ -40,8 +40,6 @@ export const Home = () => {
 
   // Filters pokemons based on input name
   const pokemonFilter = (name: string) => {
-    //var filteredPokemons = [];
-
     if (name === "") {
       getPokemons();
       return;
@@ -58,13 +56,13 @@ export const Home = () => {
 
   return (
     <Container style={{ maxWidth: '80%' }}>
-    <div style={{ margin: 'auto', maxWidth: '80%' }}>
+      <div style={{ margin: 'auto', maxWidth: '80%' }}>
       <Navbar pokemonFilter={pokemonFilter}  />
-        <Container maxWidth={false} style={{ margin: 'auto'}}>
+        <Container maxWidth={false} style={{ margin: 'auto' }}>
           <Grid container component="div" spacing={5}>
             {pokemons.length === 0 ? (
               <Grid item>
-                <PokeCard pokemons={[]} pokemonSpecies={[]} name="empty" image="/assets/pokemon_who.png" types={[]} id={0} />
+                <PokeCard pokemons={[]} pokemonSpecies={[]} name="Not found" image="/assets/empty.png" types={[]} id={0} />
               </Grid>
             ) : (
               pokemons.map((pokemon: any, key: number) => (
@@ -85,7 +83,7 @@ export const Home = () => {
             )}
           </Grid>
         </Container>
-    </div>
+      </div>
     </Container>
   )
 }

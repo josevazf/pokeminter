@@ -33,7 +33,7 @@ export default function PokeCard({ pokemons, pokemonSpecies, name, image, types,
           height: 285,
           borderColor: types && types[0] ? typeColors[types[0].type.name.toLowerCase() as keyof typeof typeColors] : undefined
         }}
-        onClick={() => setShowModal(true)}>
+        onClick={id !== 0 ? () => setShowModal(true) : undefined}>
         <CardActionArea>
           <div style={{ textAlign: "right", paddingTop: "10px", paddingRight: "10px" }}>
             <Typography gutterBottom variant="caption">
