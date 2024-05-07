@@ -4,7 +4,7 @@ import * as fs from 'fs';
 import { Readable } from 'stream';
 import { typeColors, typeSizes } from '../utils/typeRefs';
 
-var pokemonLimit = 10;
+var pokemonLimit = 151;
 
 // Gets all pokemons from API up to `pokemonLimit`
 async function getPokemons(): Promise<any> {
@@ -34,28 +34,28 @@ function breakText(text: string): [string, string] {
   let secondPart = '';
 
   for (const word of words) {
-      const tempFirstPart = firstPart + (firstPart ? ' ' : '') + word;
-      if (tempFirstPart.length <= 64) {
-          firstPart = tempFirstPart;
-      } else {
-          secondPart = (secondPart ? secondPart + ' ' : '') + word;
-      }
+    const tempFirstPart = firstPart + (firstPart ? ' ' : '') + word;
+    if (tempFirstPart.length <= 64) {
+      firstPart = tempFirstPart;
+    } else {
+      secondPart = (secondPart ? secondPart + ' ' : '') + word;
+    }
   }
   return [firstPart, secondPart];
 }
 
 async function imageUrlToBase64(url: string): Promise<string> {
   try {
-      // Fetch the image data
-      const response = await axios.get(url, { responseType: 'arraybuffer' });
+    // Fetch the image data
+    const response = await axios.get(url, { responseType: 'arraybuffer' });
 
-      // Convert the array buffer to base64
-      const base64String = Buffer.from(response.data, 'binary').toString('base64');
+    // Convert the array buffer to base64
+    const base64String = Buffer.from(response.data, 'binary').toString('base64');
 
-      return base64String;
+    return base64String;
   } catch (error) {
-      console.error('Error fetching or converting image:', error);
-      throw error;
+    console.error('Error fetching or converting image:', error);
+    throw error;
   }
 }
 
@@ -97,79 +97,87 @@ async function updateTemplates(
   type1txt_x: string
 ): Promise<string> {
   const updatedTempSVG = templateSVG
-      .replace('{name}', name)
-      .replace('{number}', `#${number}`)
-      .replace(/{color}/g, color)
-      .replace('{image}', base64SVG)
-      .replace('{height}', height)
-      .replace('{weight}', weight)
-      .replace('{ability1}', ability1)
-      .replace('{ability2}', ability2)
-      .replace('{ability1_y}', ability1_y)
-      .replace('{HP}', HP)
-      .replace('{ATK}', ATK)
-      .replace('{DEF}', DEF)
-      .replace('{SATK}', SATK)
-      .replace('{SDEF}', SDEF)
-      .replace('{SPD}', SPD)
-      .replace('{HP_bar}', HP_bar)
-      .replace('{ATK_bar}', ATK_bar)
-      .replace('{DEF_bar}', DEF_bar)
-      .replace('{SATK_bar}', SATK_bar)
-      .replace('{SDEF_bar}', SDEF_bar)
-      .replace('{SPD_bar}', SPD_bar)
-      .replace('{description1}', description1)
-      .replace('{description2}', description2)
-      .replace('{type1txt}', type1txt)
-      .replace('{type2txt}', type2txt)
-      .replace('{type1color}', type1color)
-      .replace('{type2color}', type2color)
-      .replace('{type1w}', type1w)
-      .replace('{type2w}', type2w)
-      .replace('{type1color_x}', type1color_x)
-      .replace('{type1txt_x}', type1txt_x);
-  
-      const updatedTempMetadata = templateMetadata
-      .replace('{name}', name)
-      .replace('"{number}"', Number(number))
-      .replace('"{height}"', Number(height))
-      .replace('"{weight}"', Number(weight))
-      .replace('{ability1}', ability1)
-      .replace('{ability2}', ability2)
-      .replace('"{HP}"', Number(HP))
-      .replace('"{ATK}"', Number(ATK))
-      .replace('"{DEF}"', Number(DEF))
-      .replace('"{SATK}"', Number(SATK))
-      .replace('"{SDEF}"', Number(SDEF))
-      .replace('"{SPD}"', Number(SPD))
-      .replace('{description}', description)
-      .replace('{type1txt}', type1txt)
-      .replace('{type2txt}', type2txt)
+    .replace('{name}', name)
+    .replace('{number}', `#${number}`)
+    .replace(/{color}/g, color)
+    .replace('{image}', base64SVG)
+    .replace('{height}', height)
+    .replace('{weight}', weight)
+    .replace('{ability1}', ability1)
+    .replace('{ability2}', ability2)
+    .replace('{ability1_y}', ability1_y)
+    .replace('{HP}', HP)
+    .replace('{ATK}', ATK)
+    .replace('{DEF}', DEF)
+    .replace('{SATK}', SATK)
+    .replace('{SDEF}', SDEF)
+    .replace('{SPD}', SPD)
+    .replace('{HP_bar}', HP_bar)
+    .replace('{ATK_bar}', ATK_bar)
+    .replace('{DEF_bar}', DEF_bar)
+    .replace('{SATK_bar}', SATK_bar)
+    .replace('{SDEF_bar}', SDEF_bar)
+    .replace('{SPD_bar}', SPD_bar)
+    .replace('{description1}', description1)
+    .replace('{description2}', description2)
+    .replace('{type1txt}', type1txt)
+    .replace('{type2txt}', type2txt)
+    .replace('{type1color}', type1color)
+    .replace('{type2color}', type2color)
+    .replace('{type1w}', type1w)
+    .replace('{type2w}', type2w)
+    .replace('{type1color_x}', type1color_x)
+    .replace('{type1txt_x}', type1txt_x);
+
+  const updatedTempMetadata = templateMetadata
+    .replace('{name}', name)
+    .replace('"{number}"', Number(number))
+    .replace('"{height}"', Number(height))
+    .replace('"{weight}"', Number(weight))
+    .replace('{ability1}', ability1)
+    .replace('{ability2}', ability2)
+    .replace('"{HP}"', Number(HP))
+    .replace('"{ATK}"', Number(ATK))
+    .replace('"{DEF}"', Number(DEF))
+    .replace('"{SATK}"', Number(SATK))
+    .replace('"{SDEF}"', Number(SDEF))
+    .replace('"{SPD}"', Number(SPD))
+    .replace('{description}', description)
+    .replace('{type1txt}', type1txt)
+    .replace('{type2txt}', type2txt)
 
   return [updatedTempSVG, updatedTempMetadata];
 }
 
 async function main() {
+  console.log("⌛ Creating SVG and JSON files, please wait...\n")
   try {
     const templateSVG = fs.readFileSync('./svg_template.svg', 'utf-8');
     const templateMetadata = fs.readFileSync('./metadata_template.json', 'utf-8');
     const [pokemonData, pokemonSpeciesData] = await getPokemons();
     const fileWritePromises: Promise<void>[] = [];
 
-    for (let i = 0; i < pokemonData.length; i++ ) {
-      const name = pokemonData[i].data.name.charAt(0).toUpperCase() + pokemonData[i].data.name.slice(1);
+    for (let i = 0; i < pokemonData.length; i++) {
+      var name = pokemonData[i].data.name.charAt(0).toUpperCase() + pokemonData[i].data.name.slice(1);
+
+      if (name === "Nidoran-m") {
+        name = name.replace(/-m/g, "\u2642");
+      } else if (name === "Nidoran-f") {
+        name = name.replace(/-f/g, "\u2640");
+      }
+
       const id = pokemonData[i].data.id;
       const color = typeColors[pokemonData[i].data.types[0].type.name.toLowerCase()];
       const number = `${String(id).padStart(3, '0')}`;
       const image = pokemonData[i].data.sprites.other['official-artwork'].front_default;
       const height = pokemonData[i].data.height;
       const weight = pokemonData[i].data.weight;
-      const ability1 = pokemonData[i].data.abilities[0] && 
-        pokemonData[i].data.abilities[0].ability.name.charAt(0).toUpperCase() + 
+      const ability1 = pokemonData[i].data.abilities[0] &&
+        pokemonData[i].data.abilities[0].ability.name.charAt(0).toUpperCase() +
         pokemonData[i].data.abilities[0].ability.name.slice(1)
-      const ability2 = pokemonData[i].data.abilities[1] ? 
-        pokemonData[i].data.abilities[1].ability.name.charAt(0).toUpperCase() + 
-        pokemonData[i].data.abilities[1].ability.name.slice(1) : 
+      const ability2 = pokemonData[i].data.abilities[1] ?
+        pokemonData[i].data.abilities[1].ability.name.charAt(0).toUpperCase() +
+        pokemonData[i].data.abilities[1].ability.name.slice(1) :
         "";
       const ability1_y = pokemonData[i].data.abilities[1] ? `"${"359.5"}"` : `"${"367.5"}"`;
       const HP = pokemonData[i].data.stats[0].base_stat;
@@ -184,7 +192,7 @@ async function main() {
         .replace(/\n/g, ' ');
       const [description1, description2] = breakText(description);
       const type1txt = pokemonData[i].data.types[0].type.name.toLowerCase();
-      const type2txt = pokemonData[i].data.types[1] ? pokemonData[i].data.types[1].type.name.toLowerCase(): "";
+      const type2txt = pokemonData[i].data.types[1] ? pokemonData[i].data.types[1].type.name.toLowerCase() : "";
       const type1color = typeColors[pokemonData[i].data.types[0].type.name.toLowerCase()];
       const type2color = pokemonData[i].data.types[1] ? typeColors[pokemonData[i].data.types[1].type.name.toLowerCase()] : "";
       const type1w = typeSizes[pokemonData[i].data.types[0].type.name.toLowerCase()];
@@ -225,7 +233,7 @@ async function main() {
         type1txt.charAt(0).toUpperCase() + type1txt.slice(1),
         type2txt.charAt(0).toUpperCase() + type2txt.slice(1),
         type1color,
-        type2color,        
+        type2color,
         String(type1w),
         String(type2w),
         String(type1color_x),
@@ -233,11 +241,11 @@ async function main() {
       );
 
       const writeFilePromise = new Promise<void>((resolve, reject) => {
-        fs.writeFile(`./out/svg/${String(number)}.svg`, updatedTempSVG, (err) => {
+        fs.writeFile(`./out/svg/${String(id)}.svg`, updatedTempSVG, (err) => {
           if (err) {
             reject(err);
           } else {
-            fs.writeFile(`./out/json/${String(number)}.json`, updatedTempMetadata, (err) => {
+            fs.writeFile(`./out/json/${String(id)}.json`, updatedTempMetadata, (err) => {
               if (err) {
                 reject(err);
               } else {
@@ -250,11 +258,10 @@ async function main() {
       fileWritePromises.push(writeFilePromise);
     }
 
-    console.log("⌛ Creating SVG files, please wait...\n")
     // Wait for all file writing promises to resolve
     await Promise.all(fileWritePromises);
 
-    console.log("✅ All SVG files have been successfully created.");
+    console.log("✅ All files have been successfully created.");
     //console.log("Pokemon data fetched:", data);
   } catch (error) {
     console.error("❌ Error fetching Pokemon data:", error);
