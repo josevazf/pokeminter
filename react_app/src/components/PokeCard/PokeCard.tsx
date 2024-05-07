@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import { typeColors } from '../../utils/typeColors';
+import { typeColors } from '../../utils/typeRefs';
 import PokeModal from "../PokeModal/PokeModal";
 
 export default function PokeCard({ pokemons, pokemonSpecies, name, image, types, id }: { pokemons: any[], pokemonSpecies: any[],  name: string, image: string, types: any[], id: number }) {

@@ -8,7 +8,7 @@ import { Straighten } from "../../icons/Straighten/Straighten";
 import { Weight } from "../../icons/Weight/Weight";
 import { Silhouette } from "../Silhouette/Silhouette";
 import { TypeChips } from "../TypeChips/TypeChips";
-import { typeColors } from "../../utils/typeColors";
+import { typeColors } from "../../utils/typeRefs";
 import { Button } from "@mui/material";
 import "./style.css";
 
@@ -77,7 +77,6 @@ export const PokeMonDetails = ({
 
     <div className="pok-mon-details" style={{ backgroundColor: typeColors[pokemons[currentId].data.types[0].type.name.toLowerCase()]}}>
       <div className="title">
-{/*         <ArrowBack className="arrow-back" /> */}
         <div className="pok-mon-name">{name}</div>
         <div className="element">{`#${String(number).padStart(3, '0')}`}</div>
       </div>
