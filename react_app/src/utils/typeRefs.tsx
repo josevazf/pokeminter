@@ -53,7 +53,7 @@ export const typeSizes: { [key in PokeTypes]: string } = {
   bug: "36.5",
   ghost: "46",
   steel: "42",
-  fire: "32",
+  fire: "33",
   water: "45.5",
   grass: "45",
   electric: "54",
