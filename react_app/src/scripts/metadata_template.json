@@ -1,0 +1,71 @@
+{
+  "name": "{name}",
+  "id": "{number}",
+  "description": "{description}",
+  "image": "{link}",
+  "external_url": "https://pokeminter.vercel.app",
+  "attributes": [
+    {
+      "trait_type": "Type 1",
+      "value": "{type1txt}"
+    },
+    {
+      "trait_type": "Type 2",
+      "value": "{type2txt}"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Weight (kg)",
+      "value": "{weight}"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Height (m)",
+      "value": "{height}"
+    },
+    {
+      "trait_type": "Move 1",
+      "value": "{ability1}"
+    },
+    {
+      "trait_type": "Move 2",
+      "value": "{ability2}"
+    },
+    {
+      "display_type": "number",
+      "max_value": 255,
+      "trait_type": "HP",
+      "value": "{HP}"
+    },
+    {
+      "display_type": "number",
+      "max_value": 255,
+      "trait_type": "Attack",
+      "value": "{ATK}"
+    },
+    {
+      "display_type": "number",
+      "max_value": 255,
+      "trait_type": "Defense",
+      "value": "{DEF}"
+    },
+    {
+      "display_type": "number",
+      "max_value": 255,
+      "trait_type": "Sp. Attack",
+      "value": "{SATK}"
+    },
+    {
+      "display_type": "number",
+      "max_value": 255,
+      "trait_type": "Sp. Defense",
+      "value": "{SDEF}"
+    },
+    {
+      "display_type": "number",
+      "max_value": 255,
+      "trait_type": "Speed",
+      "value": "{SPD}"
+    }
+  ]
+}

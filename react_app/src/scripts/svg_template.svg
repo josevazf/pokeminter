@@ -231,7 +231,7 @@
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1013_1574" result="shape" />
     </filter>
     <pattern id="pattern0_1013_1574" patternContentUnits="objectBoundingBox" width="1" height="1">
-      <use xlink:href="#image0_1013_1574" transform="scale(0.0025)" />
+      <use xlink:href="#pokemon_image" transform="scale(0.0025)" />
     </pattern>
     <filter id="filter3_d_1013_1574" x="25.3333" y="26.7333" width="28.9333" height="28.5333"
       filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -256,7 +256,6 @@
       <rect width="233" height="96" fill="white" transform="translate(103 520)" />
     </clipPath>
   <!-- IMAGE -->
-    <image id="image0_1013_1574" width="400" height="400"
-      xlink:href="{image}" />
+    <image id="pokemon_image" width="400" height="400" xlink:href="data:image/png;base64,{image}" />
   </defs>
 </svg>
