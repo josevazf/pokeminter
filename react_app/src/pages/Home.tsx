@@ -38,6 +38,9 @@ export const Home = () => {
       .catch((err) => console.log(err));
   };
 
+  const pokemonsAll = pokemons;
+  const pokemonsSpeciesAll = pokemonSpecies;
+
   // Filters pokemons based on input name
   const pokemonFilter = (name: string) => {
     if (name === "") {
@@ -69,9 +72,9 @@ export const Home = () => {
                 <Grid item xs={12} sm={8} md={6} lg={4} xl={2} key={key}>
                   <Box>
                     <PokeCard
-                      pokemons={pokemons}
+                      pokemons={pokemonsAll}
                       /* @ts-ignore */
-                      pokemonSpecies={pokemonSpecies}
+                      pokemonSpecies={pokemonsSpeciesAll}
                       name={pokemon.data.name}
                       id={pokemon.data.id}
                       image={pokemon.data.sprites.other['official-artwork'].front_default}

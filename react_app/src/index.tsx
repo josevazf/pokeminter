@@ -10,11 +10,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi';
 import {
-  arbitrum,
-  base,
-  mainnet,
-  optimism,
-  polygon,
   polygonMumbai,
   sepolia,
 } from 'wagmi/chains';
@@ -25,7 +20,7 @@ const config = getDefaultConfig({
   chains: [
     sepolia,
     polygonMumbai,
-    ...(process.env.REACT_APP_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
+    ...(process.env.REACT_APP_ENABLE_TESTNETS === 'true' ? [sepolia, polygonMumbai] : []),
   ],
 });
 
