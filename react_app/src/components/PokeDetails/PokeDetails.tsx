@@ -58,9 +58,22 @@ export const PokeMonDetails = ({
   };
 
   var name = pokemons[currentId].data.name.charAt(0).toUpperCase() + pokemons[currentId].data.name.slice(1);
+
+  if (name === "Nidoran-m") {
+    name = name.replace(/-m/g, "\u2642");
+  } else if (name === "Nidoran-f") {
+    name = name.replace(/-f/g, "\u2640");
+  }
+
   var number = currentId + 1;
   var image = pokemons[currentId].data.sprites.other['official-artwork'].front_default;
-  var description = pokemonSpecies[currentId].data.flavor_text_entries[1].flavor_text.replace(/\u000C/g, ' ').replace(/POKéMON/g, "Pokémon");
+
+  var j = 0;
+  while (pokemonSpecies[currentId].data.flavor_text_entries[j].language.name !== "en") {
+    j++;
+  }
+
+  var description = pokemonSpecies[currentId].data.flavor_text_entries[j].flavor_text.replace(/\u000C/g, ' ').replace(/POKéMON/g, "Pokémon");
   var height = `${pokemons[currentId].data.height} m`;
   var weight = `${pokemons[currentId].data.weight} kg`;
   var ability1 = pokemons[currentId].data.abilities[0] && pokemons[currentId].data.abilities[0].ability.name.charAt(0).toUpperCase() + pokemons[currentId].data.abilities[0].ability.name.slice(1);

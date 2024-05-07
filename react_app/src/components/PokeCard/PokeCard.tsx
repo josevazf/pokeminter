@@ -23,6 +23,12 @@ export default function PokeCard({ pokemons, pokemonSpecies, name, image, types,
     return "Ooooops...";
   };
 
+  if (name === "nidoran-m") {
+    name = name.replace(/-m/g, "\u2642");
+  } else if (name === "nidoran-f") {
+    name = name.replace(/-f/g, "\u2640");
+  }
+
   return (
     <>
       <Card className='card'
