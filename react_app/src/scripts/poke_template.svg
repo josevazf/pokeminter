@@ -1,0 +1,262 @@
+<svg width="360" height="640" viewBox="0 0 360 640" fill="none" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i");
+  </style>
+
+  <!-- MAIN COLOR -->
+  <rect width="360" height="640" fill="{color}" rx="10" ry="10"/>
+  <g opacity="0.1">
+    <path
+      d="M272.762 112C272.762 125.676 261.676 136.762 248 136.762C234.324 136.762 223.238 125.676 223.238 112C223.238 98.3244 234.324 87.2381 248 87.2381C261.676 87.2381 272.762 98.3244 272.762 112Z"
+      fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M248 216C300.393 216 343.738 177.257 350.947 126.857H290.035C283.917 144.169 267.407 156.571 248 156.571C228.593 156.571 212.084 144.169 205.965 126.857H145.053C152.262 177.257 195.607 216 248 216ZM205.965 97.1429H145.053C152.262 46.7431 195.607 8 248 8C300.393 8 343.738 46.7431 350.947 97.1429H290.035C283.917 79.8314 267.407 67.4286 248 67.4286C228.593 67.4286 212.084 79.8314 205.965 97.1429ZM272.762 112C272.762 125.676 261.676 136.762 248 136.762C234.324 136.762 223.238 125.676 223.238 112C223.238 98.3244 234.324 87.2381 248 87.2381C261.676 87.2381 272.762 98.3244 272.762 112Z"
+      fill="white" />
+  </g>
+  <g filter="url(#filter0_i_1013_1574)">
+    <rect x="4" y="224" width="352" height="412" rx="8" fill="white" />
+
+    <!-- TYPE 1 -->
+    <rect x="{type1color_x}" y="280" width="{type1w}" height="20" rx="10" fill="{type1color}" />
+    <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+      font-weight="bold" letter-spacing="0px">
+      <tspan x="{type1txt_x}" y="293.5">{type1txt}</tspan>
+    </text>
+
+    <!-- TYPE 2 -->
+    <rect x="188" y="280" width="{type2w}" height="20" rx="10" fill="{type2color}" />
+    <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+      font-weight="bold" letter-spacing="0px">
+      <tspan x="196" y="293.5">{type2txt}</tspan>
+    </text>
+
+    <!-- ABOUT -->
+    <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14"
+      font-weight="bold" letter-spacing="0px">
+      <tspan x="158.07" y="328.9">About</tspan>
+    </text>
+    <g clip-path="url(#clip0_1013_1574)">
+      <rect width="312" height="48" transform="translate(24 348)" fill="white" />
+      <path
+        d="M52.2833 369H61.05L60 361.667H53.3333L52.2833 369ZM56.6667 360.667C56.9556 360.667 57.1944 360.569 57.3833 360.375C57.5722 360.181 57.6667 359.944 57.6667 359.667C57.6667 359.378 57.5722 359.139 57.3833 358.95C57.1944 358.761 56.9556 358.667 56.6667 358.667C56.3889 358.667 56.1528 358.761 55.9583 358.95C55.7639 359.139 55.6667 359.378 55.6667 359.667C55.6667 359.944 55.7639 360.181 55.9583 360.375C56.1528 360.569 56.3889 360.667 56.6667 360.667ZM58.4 360.667H60C60.2556 360.667 60.4778 360.747 60.6667 360.908C60.8556 361.069 60.9667 361.278 61 361.533L62.0333 368.867C62.0778 369.167 62.0028 369.431 61.8083 369.658C61.6139 369.886 61.3611 370 61.05 370H52.2833C51.9722 370 51.7194 369.886 51.525 369.658C51.3306 369.431 51.2556 369.167 51.3 368.867L52.3333 361.533C52.3667 361.278 52.4778 361.069 52.6667 360.908C52.8556 360.747 53.0778 360.667 53.3333 360.667H54.9333C54.8444 360.511 54.7778 360.353 54.7333 360.192C54.6889 360.031 54.6667 359.856 54.6667 359.667C54.6667 359.111 54.8611 358.639 55.25 358.25C55.6389 357.861 56.1111 357.667 56.6667 357.667C57.2222 357.667 57.6944 357.861 58.0833 358.25C58.4722 358.639 58.6667 359.111 58.6667 359.667C58.6667 359.856 58.6444 360.031 58.6 360.192C58.5556 360.353 58.4889 360.511 58.4 360.667ZM52.2833 369H61.05H52.2833Z"
+        fill="#1D1D1D" />
+
+      <!-- WEIGHT -->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="72.6667" y="367.5">{weight} kg </tspan>
+      </text>
+      <text fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="8"
+        letter-spacing="0em">
+        <tspan x="61.5807" y="392.8">Weight</tspan>
+      </text>
+      <rect x="127.333" y="348" width="1" height="48" fill="#E0E0E0" />
+      <path
+        d="M158 358.333C158 358.067 158.1 357.833 158.3 357.633C158.5 357.433 158.733 357.333 159 357.333H165C165.256 357.333 165.486 357.433 165.692 357.633C165.897 357.833 166 358.067 166 358.333V369.667C166 369.933 165.897 370.167 165.692 370.367C165.486 370.567 165.256 370.667 165 370.667H159C158.733 370.667 158.5 370.567 158.3 370.367C158.1 370.167 158 369.933 158 369.667V358.333ZM159 358.333V369.667H165V367.5H162V366.5H165V364.5H162V363.5H165V361.5H162V360.5H165V358.333H159ZM162 360.5V361.5V360.5ZM162 363.5V364.5V363.5ZM162 366.5V367.5V366.5Z"
+        fill="#1D1D1D" />
+
+      <!-- HEIGHT -->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="178" y="367.5">{height} m</tspan>
+      </text>
+      <text fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="8"
+        letter-spacing="0em">
+        <tspan x="167.047" y="392.8">Height</tspan>
+      </text>
+      <rect x="231.667" y="348" width="1" height="48" fill="#E0E0E0" />
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+
+      <!-- MOVES -->
+        <tspan x="256" y={ability1_y}>{ability1}</tspan>
+        <tspan x="256" y="375.5">{ability2}</tspan>
+      </text>
+      <text fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="8"
+        letter-spacing="0em">
+        <tspan x="271.517" y="392.8">Moves</tspan>
+      </text>
+    </g>
+
+    <!-- DESCRIPTION -->
+    <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+      letter-spacing="0px">
+      <tspan x="24" y="429.5">{description1}</tspan>
+      <tspan x="24" y="445.5">{description2}</tspan>
+    </text>
+
+    <!-- BASE STATS -->
+    <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14"
+      font-weight="bold" letter-spacing="0px">
+      <tspan x="142.286" y="500.9">Base Stats</tspan>
+    </text>
+    
+    <g clip-path="url(#clip1_1013_1574)">
+    <!-- HP TEXT-->
+      <rect width="312" height="96" transform="translate(24 520)" fill="white" />
+      <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        font-weight="bold" letter-spacing="0px">
+        <tspan x="37.4453" y="531.5">HP</tspan>
+      </text>
+    <!-- ATK TEXT-->
+      <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        font-weight="bold" letter-spacing="0px">
+        <tspan x="30.7461" y="547.5">ATK</tspan>
+      </text>
+    <!-- DEF TEXT-->
+      <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        font-weight="bold" letter-spacing="0px">
+        <tspan x="32.8555" y="563.5">DEF</tspan>
+      </text>
+    <!-- SATK TEXT-->
+      <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        font-weight="bold" letter-spacing="0px">
+        <tspan x="24.5938" y="579.5">SATK</tspan>
+      </text>
+    <!-- SDEF TEXT-->
+      <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        font-weight="bold" letter-spacing="0px">
+        <tspan x="26.7031" y="595.5">SDEF</tspan>
+      </text>
+    <!-- SPD TEXT-->
+      <text fill="{color}" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        font-weight="bold" letter-spacing="0px">
+        <tspan x="31.3418" y="611.5">SPD</tspan>
+      </text>
+      <rect x="63" y="520" width="1" height="96" fill="#E0E0E0" />
+
+    <!-- HP VALUE-->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="76" y="531.5">{HP}</tspan>
+      </text>
+    <!-- ATK VALUE-->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="76" y="547.5">{ATK}</tspan>
+      </text>
+    <!-- DEF VALUE-->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="76" y="563.5">{DEF}</tspan>
+      </text>
+    <!-- SATK VALUE-->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="76" y="579.5">{SATK}</tspan>
+      </text>
+    <!-- SDEF VALUE-->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="76" y="595.5">{SDEF}</tspan>
+      </text>
+    <!-- SPD VALUE-->
+      <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
+        letter-spacing="0px">
+        <tspan x="76" y="611.5">{SPD}</tspan>
+      </text>
+
+      <g clip-path="url(#clip2_1013_1574)">
+       <!-- HP BAR-->
+        <rect x="103" y="526" width="{HP_bar}" height="4" fill="{color}" />
+        <rect opacity="0.2" x="103" y="526" width="233" height="4" rx="2" fill="{color}" />
+      <!-- ATK BAR-->
+        <rect x="103" y="542" width="{ATK_bar}" height="4" fill="{color}" />
+        <rect opacity="0.2" x="103" y="542" width="233" height="4" rx="2" fill="{color}" />
+      <!-- DEF BAR-->
+        <rect x="103" y="558" width="{DEF_bar}" height="4" fill="{color}" />
+        <rect opacity="0.2" x="103" y="558" width="233" height="4" rx="2" fill="{color}" />
+      <!-- SATK BAR-->
+        <rect x="103" y="574" width="{SATK_bar}" height="4" fill="{color}" />
+        <rect opacity="0.2" x="103" y="574" width="233" height="4" rx="2" fill="{color}" />
+      <!-- SDEF BAR-->
+        <rect x="103" y="590" width="{SDEF_bar}" height="4" fill="{color}" />
+        <rect opacity="0.2" x="103" y="590" width="233" height="4" rx="2" fill="{color}" />
+      <!-- SPD BAR-->
+        <rect x="103" y="606" width="{SPD_bar}" height="4" fill="{color}" />
+        <rect opacity="0.2" x="103" y="606" width="233" height="4" rx="2" fill="{color}" />
+      </g>
+    </g>
+  </g>
+  <rect x="80" y="80" width="200" height="200" fill="url(#pattern0_1013_1574)" />
+<!-- POKEMON NAME -->
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="24"
+    font-weight="bold" letter-spacing="0em">
+    <tspan x="24" y="48.4">{name}</tspan>
+  </text>
+<!-- POKEMON NUMBER -->
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="12"
+    font-weight="bold" letter-spacing="0px">
+    <tspan x="303" y="44.2">{number}</tspan>
+  </text>
+  <defs>
+    <filter id="filter0_i_1013_1574" x="4" y="224" width="352" height="413" filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha" />
+      <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_innerShadow_1013_1574" />
+      <feOffset dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1013_1574" />
+    </filter>
+    <filter id="filter1_d_1013_1574" x="28.3" y="187.25" width="14.5" height="19.425" filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha" />
+      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1013_1574" />
+      <feOffset dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1013_1574" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1013_1574" result="shape" />
+    </filter>
+    <filter id="filter2_d_1013_1574" x="316.637" y="187.237" width="14.4631" height="19.4263"
+      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha" />
+      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1013_1574" />
+      <feOffset dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  0 0 0.2 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1013_1574" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1013_1574" result="shape" />
+    </filter>
+    <pattern id="pattern0_1013_1574" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_1013_1574" transform="scale(0.0025)" />
+    </pattern>
+    <filter id="filter3_d_1013_1574" x="25.3333" y="26.7333" width="28.9333" height="28.5333"
+      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha" />
+      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1013_1574" />
+      <feOffset dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1013_1574" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1013_1574" result="shape" />
+    </filter>
+    <clipPath id="clip0_1013_1574">
+      <rect width="312" height="48" fill="white" transform="translate(24 348)" />
+    </clipPath>
+    <clipPath id="clip1_1013_1574">
+      <rect width="312" height="96" fill="white" transform="translate(24 520)" />
+    </clipPath>
+    <clipPath id="clip2_1013_1574">
+      <rect width="233" height="96" fill="white" transform="translate(103 520)" />
+    </clipPath>
+  <!-- IMAGE -->
+    <image id="image0_1013_1574" width="400" height="400"
+      xlink:href="{image}" />
+  </defs>
+</svg>
