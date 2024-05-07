@@ -3,6 +3,8 @@
   <style>
     @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i");
   </style>
+
+  <!-- MAIN COLOR -->
   <rect width="360" height="640" fill="#B8B8B8" />
   <g opacity="0.1">
     <path
@@ -14,16 +16,22 @@
   </g>
   <g filter="url(#filter0_i_1013_1574)">
     <rect x="4" y="224" width="352" height="412" rx="8" fill="white" />
-    <rect x="130" y="280" width="42" height="20" rx="10" fill="#666666" />
+
+    <!-- TYPE 1 -->
+    <rect x="130" y="280" width="50" height="20" rx="10" fill="#666666" />
     <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
       font-weight="bold" letter-spacing="0px">
-      <tspan x="138" y="293.5">Fighting</tspan>
+      <tspan x="138" y="293.5">Type 1</tspan>
     </text>
-    <rect x="188" y="280" width="42" height="20" rx="10" fill="#666666" />
+
+    <!-- TYPE 2 -->
+    <rect x="188" y="280" width="50" height="20" rx="10" fill="#666666" />
     <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
       font-weight="bold" letter-spacing="0px">
-      <tspan x="196" y="293.5">Type</tspan>
+      <tspan x="196" y="293.5">Type 2</tspan>
     </text>
+
+    <!-- ABOUT -->
     <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14"
       font-weight="bold" letter-spacing="0px">
       <tspan x="158.07" y="328.9">About</tspan>
@@ -33,6 +41,8 @@
       <path
         d="M52.2833 369H61.05L60 361.667H53.3333L52.2833 369ZM56.6667 360.667C56.9556 360.667 57.1944 360.569 57.3833 360.375C57.5722 360.181 57.6667 359.944 57.6667 359.667C57.6667 359.378 57.5722 359.139 57.3833 358.95C57.1944 358.761 56.9556 358.667 56.6667 358.667C56.3889 358.667 56.1528 358.761 55.9583 358.95C55.7639 359.139 55.6667 359.378 55.6667 359.667C55.6667 359.944 55.7639 360.181 55.9583 360.375C56.1528 360.569 56.3889 360.667 56.6667 360.667ZM58.4 360.667H60C60.2556 360.667 60.4778 360.747 60.6667 360.908C60.8556 361.069 60.9667 361.278 61 361.533L62.0333 368.867C62.0778 369.167 62.0028 369.431 61.8083 369.658C61.6139 369.886 61.3611 370 61.05 370H52.2833C51.9722 370 51.7194 369.886 51.525 369.658C51.3306 369.431 51.2556 369.167 51.3 368.867L52.3333 361.533C52.3667 361.278 52.4778 361.069 52.6667 360.908C52.8556 360.747 53.0778 360.667 53.3333 360.667H54.9333C54.8444 360.511 54.7778 360.353 54.7333 360.192C54.6889 360.031 54.6667 359.856 54.6667 359.667C54.6667 359.111 54.8611 358.639 55.25 358.25C55.6389 357.861 56.1111 357.667 56.6667 357.667C57.2222 357.667 57.6944 357.861 58.0833 358.25C58.4722 358.639 58.6667 359.111 58.6667 359.667C58.6667 359.856 58.6444 360.031 58.6 360.192C58.5556 360.353 58.4889 360.511 58.4 360.667ZM52.2833 369H61.05H52.2833Z"
         fill="#1D1D1D" />
+
+      <!-- WEIGHT -->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="72.6667" y="367.5">19,9 kg </tspan>
@@ -45,10 +55,11 @@
       <path
         d="M158 358.333C158 358.067 158.1 357.833 158.3 357.633C158.5 357.433 158.733 357.333 159 357.333H165C165.256 357.333 165.486 357.433 165.692 357.633C165.897 357.833 166 358.067 166 358.333V369.667C166 369.933 165.897 370.167 165.692 370.367C165.486 370.567 165.256 370.667 165 370.667H159C158.733 370.667 158.5 370.567 158.3 370.367C158.1 370.167 158 369.933 158 369.667V358.333ZM159 358.333V369.667H165V367.5H162V366.5H165V364.5H162V363.5H165V361.5H162V360.5H165V358.333H159ZM162 360.5V361.5V360.5ZM162 363.5V364.5V363.5ZM162 366.5V367.5V366.5Z"
         fill="#1D1D1D" />
+
+      <!-- HEIGHT -->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="178" y="367.5">9,9 m</tspan>
-        <tspan x="195.246" y="367.5">m</tspan>
       </text>
       <text fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="8"
         letter-spacing="0em">
@@ -57,6 +68,8 @@
       <rect x="231.667" y="348" width="1" height="48" fill="#E0E0E0" />
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
+
+      <!-- MOVES -->
         <tspan x="264.833" y="359.5">Ability 1</tspan>
         <tspan x="264.833" y="375.5">Ability 2</tspan>
       </text>
@@ -65,6 +78,8 @@
         <tspan x="271.517" y="392.8">Moves</tspan>
       </text>
     </g>
+
+    <!-- DESCRIPTION -->
     <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
       letter-spacing="0px">
       <tspan x="24" y="429.5">Lorem </tspan>
@@ -87,91 +102,107 @@
       <tspan x="327.143" y="445.5">in </tspan>
       <tspan x="24" y="461.5">eros.</tspan>
     </text>
+
+    <!-- BASE STATS -->
     <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="14"
       font-weight="bold" letter-spacing="0px">
       <tspan x="142.286" y="500.9">Base Stats</tspan>
     </text>
+    
     <g clip-path="url(#clip1_1013_1574)">
+    <!-- HP TEXT-->
       <rect width="312" height="96" transform="translate(24 520)" fill="white" />
       <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         font-weight="bold" letter-spacing="0px">
         <tspan x="37.4453" y="531.5">HP</tspan>
       </text>
+    <!-- ATK TEXT-->
       <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         font-weight="bold" letter-spacing="0px">
         <tspan x="30.7461" y="547.5">ATK</tspan>
       </text>
+    <!-- DEF TEXT-->
       <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         font-weight="bold" letter-spacing="0px">
         <tspan x="32.8555" y="563.5">DEF</tspan>
       </text>
+    <!-- SATK TEXT-->
       <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         font-weight="bold" letter-spacing="0px">
         <tspan x="24.5938" y="579.5">SATK</tspan>
       </text>
+    <!-- SDEF TEXT-->
       <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         font-weight="bold" letter-spacing="0px">
         <tspan x="26.7031" y="595.5">SDEF</tspan>
       </text>
+    <!-- SPD TEXT-->
       <text fill="#B8B8B8" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         font-weight="bold" letter-spacing="0px">
         <tspan x="31.3418" y="611.5">SPD</tspan>
       </text>
       <rect x="63" y="520" width="1" height="96" fill="#E0E0E0" />
+
+    <!-- HP VALUE-->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="76" y="531.5">999</tspan>
       </text>
+    <!-- ATK VALUE-->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="76" y="547.5">999</tspan>
       </text>
+    <!-- DEF VALUE-->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="76" y="563.5">999</tspan>
       </text>
+    <!-- SATK VALUE-->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="76" y="579.5">999</tspan>
       </text>
+    <!-- SDEF VALUE-->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="76" y="595.5">999</tspan>
       </text>
+    <!-- SPD VALUE-->
       <text fill="#1D1D1D" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="10"
         letter-spacing="0px">
         <tspan x="76" y="611.5">999</tspan>
       </text>
-    <!-- Base Stats -->
+
       <g clip-path="url(#clip2_1013_1574)">
-      <!-- HP -->
+       <!-- HP BAR-->
         <rect x="103" y="526" width="153" height="4" fill="#B8B8B8" />
         <rect opacity="0.2" x="103" y="526" width="233" height="4" rx="2" fill="#B8B8B8" />
-      <!-- ATK -->
+      <!-- ATK BAR-->
         <rect x="103" y="542" width="153" height="4" fill="#B8B8B8" />
         <rect opacity="0.2" x="103" y="542" width="233" height="4" rx="2" fill="#B8B8B8" />
-      <!-- DEF -->
+      <!-- DEF BAR-->
         <rect x="103" y="558" width="153" height="4" fill="#B8B8B8" />
         <rect opacity="0.2" x="103" y="558" width="233" height="4" rx="2" fill="#B8B8B8" />
-      <!-- SATK -->
+      <!-- SATK BAR-->
         <rect x="103" y="574" width="153" height="4" fill="#B8B8B8" />
         <rect opacity="0.2" x="103" y="574" width="233" height="4" rx="2" fill="#B8B8B8" />
-      <!-- SDEF -->
+      <!-- SDEF BAR-->
         <rect x="103" y="590" width="153" height="4" fill="#B8B8B8" />
         <rect opacity="0.2" x="103" y="590" width="233" height="4" rx="2" fill="#B8B8B8" />
-      <!-- SPD -->
+      <!-- SPD BAR-->
         <rect x="103" y="606" width="153" height="4" fill="#B8B8B8" />
         <rect opacity="0.2" x="103" y="606" width="233" height="4" rx="2" fill="#B8B8B8" />
       </g>
     </g>
   </g>
   <rect x="80" y="80" width="200" height="200" fill="url(#pattern0_1013_1574)" />
-<!-- Pokemon Name -->
+<!-- POKEMON NAME -->
   <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="24"
     font-weight="bold" letter-spacing="0em">
     <tspan x="64" y="48.4">Pok&#xe9;mon Name</tspan>
   </text>
-<!-- Pokemon Number -->
+<!-- POKEMON NUMBER -->
   <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="12"
     font-weight="bold" letter-spacing="0px">
     <tspan x="303" y="44.2">#999</tspan>

@@ -42,3 +42,26 @@ export const typeColors: { [key in PokeTypes]: string } = {
   unknown: "#526677",
   shadow: "#4F507B",
 };
+
+export const typeSizes: { [key in PokeTypes]: string } = {
+  normal: "53",
+  fighting: "57",
+  flying: "45.5",
+  ground: "53",
+  poison: "50",
+  rock: "38",
+  bug: "36.5",
+  ghost: "46",
+  steel: "42",
+  fire: "32",
+  water: "45.5",
+  grass: "45",
+  electric: "54",
+  psychic: "55",
+  ice: "31",
+  dragon: "53",
+  dark: "40",
+  fairy: "39",
+  unknown: "64",
+  shadow: "56.5",
+};
