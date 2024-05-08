@@ -7,7 +7,7 @@
 ## 👁️ Overview
 This project was built using React (create-react-app with typescript), Axios to fetch data from the PokeApi, MUI components to ease up on the UI creation, RainbowKit to provide the “Connect Pokédex” button (aka wallet), Wagmi to glue the frontend with the EVM, and some scripts to automatically generate the Pokemon SVG’s and metadata JSON files to be used in the NFT creation.
 
-The number of Pokémons rendered is limited to 151 (considering these the OG's) and also because all of them are rendered on each load of the page, this is something to work on and updgrade later on.
+The number of Pokémons rendered is limited to 151 (considering these the OG's) and also because all of them are rendered on each load of the page, this is something to work on and updgrade later on. All of the Pokémon information is fetched from the PokeAPI using Axios, one time, on page load.  
 There is also a search bar that filters the Pokémons showed based on the input name.
 When a Pokémon card is clicked a modal opens with a detailed Pokémon Card and a button to mint it as an NFT, here we can also change the Card to the previous and next Pokémon based on it's number.
 
@@ -71,7 +71,8 @@ $ tsx
 $ npm start
 ```
 
-## Future updates
+## 🔮 Future Improvements
 - Render a fixed number of Pokémons at a time, allowing to integrate the full Pokédex
 - Option to filter Pokémons by defined attributes
 - Show NFTs that have been minted by the user
+
