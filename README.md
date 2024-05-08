@@ -22,7 +22,7 @@ Deployed contracts:
 OpenSea collections:
 - Sepolia Testnet: https://testnets.opensea.io/collection/pokeminter-sepolia
 - Base Sepolia Testnet: https://testnets.opensea.io/collection/pokeminter-base-sepolia
-- 
+
 ![image](https://github.com/josevazf/pokeminter/assets/19204122/46236e98-a2b9-4c06-853c-760e86076cb6)
 
 ## 🛠️ Technologies
@@ -70,3 +70,8 @@ $ cd react-app/scripts
 $ tsx 
 $ npm start
 ```
+
+## Future updates
+- Render a fixed number of Pokémons at a time, allowing to integrate the full Pokédex
+- Option to filter Pokémons by defined attributes
+- Show NFTs that have been minted by the user
