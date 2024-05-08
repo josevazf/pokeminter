@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import axios from "axios";
@@ -7,13 +8,15 @@ import { Box, Container, Grid } from "@mui/material";
 export const Home = () => {
   const [pokemons, setPokemons] = useState([]);
   const [pokemonSpecies, setPokemonSpecies] = useState([]);
+  const [pokemonAll, setPokemonAll] = useState([]);
+  const [pokemonSpeciesAll, setPokemonSpeciesAll] = useState([]);
 
   useEffect(() => {
     getPokemons();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  var pokemonLimit = 151;
+  const pokemonLimit = 151;
 
   // Gets all pokemons from API up to `pokemonLimit`
   const getPokemons = () => {
@@ -27,24 +30,26 @@ export const Home = () => {
     axios.all(pokeEndpoints.map((endpoint) =>
       axios
         .get(endpoint)))
-      /* @ts-ignore */
-      .then((res) => setPokemons(res))
+      .then((res) => {
+        setPokemons(res);
+        setPokemonAll(res);
+      })
       .catch((err) => console.log(err));
     axios.all(pokeSpeciesEndpoints.map((endpoint) =>
       axios
         .get(endpoint)))
-      /* @ts-ignore */
-      .then((res) => setPokemonSpecies(res))
+      .then((res) => {
+        setPokemonSpecies(res);
+        setPokemonSpeciesAll(res);
+      })
       .catch((err) => console.log(err));
   };
-
-  const pokemonsAll = pokemons;
-  const pokemonsSpeciesAll = pokemonSpecies;
 
   // Filters pokemons based on input name
   const pokemonFilter = (name: string) => {
     if (name === "") {
-      getPokemons();
+      setPokemons(pokemonAll);
+      setPokemonSpecies(pokemonSpeciesAll);
       return;
     }
     var filteredPokemons = pokemons.filter((pokemon: any) =>
@@ -72,9 +77,8 @@ export const Home = () => {
                 <Grid item xs={12} sm={8} md={6} lg={4} xl={2} key={key}>
                   <Box>
                     <PokeCard
-                      pokemons={pokemonsAll}
-                      /* @ts-ignore */
-                      pokemonSpecies={pokemonsSpeciesAll}
+                      pokemons={pokemonAll}
+                      pokemonSpecies={pokemonSpeciesAll}
                       name={pokemon.data.name}
                       id={pokemon.data.id}
                       image={pokemon.data.sprites.other['official-artwork'].front_default}

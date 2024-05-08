@@ -1,16 +1,16 @@
-.pok-mon-details {
+.pokemon-details {
   align-items: flex-start;
   background-color: var(--grayscalewireframe);
   display: flex;
   flex-direction: column;
-  height: 640px;
+  height: 785px;
   padding: 4px;
   position: relative;
   width: 360px;
   border-radius: 8px;
 }
 
-.pok-mon-details .background {
+.pokemon-details .background {
   align-self: stretch;
   background-color: var(--grayscalewireframe);
   border-radius: 4px;
@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-.pok-mon-details .div {
+.pokemon-details .div {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -32,7 +32,7 @@
   width: 100%;
 }
 
-.pok-mon-details .title {
+.pokemon-details .title {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -44,13 +44,13 @@
   z-index: 3;
 }
 
-.pok-mon-details .arrow-back {
+.pokemon-details .arrow-back {
   height: 32px !important;
   position: relative !important;
   width: 32px !important;
 }
 
-.pok-mon-details .pok-mon-name {
+.pokemon-details .pokemon-name {
   color: var(--grayscalewhite);
   flex: 1;
   font-family: var(--header-headline-font-family);
@@ -63,7 +63,7 @@
   position: relative;
 }
 
-.pok-mon-details .element {
+.pokemon-details .element {
   color: var(--grayscalewhite);
   font-family: var(--header-subtitle-2-font-family);
   font-size: var(--header-subtitle-2-font-size);
@@ -76,7 +76,7 @@
   width: fit-content;
 }
 
-.pok-mon-details .element-2 {
+.pokemon-details .element-2 {
   color: var(--grayscaledark);
   font-family: var(--body-body-3-font-family);
   font-size: var(--body-body-3-font-size);
@@ -89,7 +89,7 @@
   width: 9px;
 }
 
-.pok-mon-details .element-3 {
+.pokemon-details .element-3 {
   color: var(--grayscaledark);
   font-family: var(--body-body-3-font-family);
   font-size: var(--body-body-3-font-size);
@@ -101,7 +101,7 @@
   width: 19px;
 }
 
-.pok-mon-details .image {
+.pokemon-details .image {
   align-items: flex-end;
   align-self: stretch;
   display: flex;
@@ -114,20 +114,20 @@
   z-index: 2;
 }
 
-.pok-mon-details .icon-instance-node {
+.pokemon-details .icon-instance-node {
   height: 24px !important;
   position: relative !important;
   width: 24px !important;
   z-index: 98;
 }
 
-.pok-mon-details .silhouette-instance {
+.pokemon-details .silhouette-instance {
   left: 76px !important;
   position: absolute !important;
   top: 0 !important;
 }
 
-.pok-mon-details .card {
+.pokemon-details .card {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--grayscalewhite);
@@ -144,11 +144,11 @@
   z-index: 1;
 }
 
-.pok-mon-details .type-chips-instance {
+.pokemon-details .type-chips-instance {
   flex: 0 0 auto !important;
 }
 
-.pok-mon-details .text-wrapper {
+.pokemon-details .text-wrapper {
   align-self: stretch;
   color: var(--grayscalewireframe);
   font-family: var(--header-subtitle-1-font-family);
@@ -161,7 +161,7 @@
   text-align: center;
 }
 
-.pok-mon-details .text-wrapper-2 {
+.pokemon-details .text-wrapper-2 {
   color: var(--grayscaledark);
   font-family: var(--body-body-3-font-family);
   font-size: var(--body-body-3-font-size);
@@ -176,7 +176,7 @@
   width: fit-content;
 }
 
-.pok-mon-details .text-wrapper-3 {
+.pokemon-details .text-wrapper-3 {
   align-self: stretch;
   color: var(--grayscalemedium);
   font-family: var(--body-caption-font-family);
@@ -189,7 +189,7 @@
   text-align: center;
 }
 
-.pok-mon-details .attribute {
+.pokemon-details .attribute {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--grayscalewhite);
@@ -200,7 +200,7 @@
   width: 100%;
 }
 
-.pok-mon-details .frame {
+.pokemon-details .frame {
   align-items: center;
   display: flex;
   flex: 1;
@@ -210,7 +210,7 @@
   position: relative;
 }
 
-.pok-mon-details .frame-2 {
+.pokemon-details .frame-2 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -222,20 +222,20 @@
   width: 100%;
 }
 
-.pok-mon-details .icon-instance-node-2 {
+.pokemon-details .icon-instance-node-2 {
   height: 16px !important;
   position: relative !important;
   width: 16px !important;
 }
 
-.pok-mon-details .divider {
+.pokemon-details .divider {
   align-self: stretch;
   background-color: var(--grayscalelight);
   position: relative;
   width: 1px;
 }
 
-.pok-mon-details .ability-ability-wrapper {
+.pokemon-details .ability-ability-wrapper {
   align-items: center;
   display: inline-flex;
   gap: 8px;
@@ -243,7 +243,7 @@
   position: relative;
 }
 
-.pok-mon-details .ability-ability {
+.pokemon-details .ability-ability {
   color: var(--grayscaledark);
   font-family: var(--body-body-3-font-family);
   font-size: var(--body-body-3-font-size);
@@ -256,7 +256,7 @@
   width: fit-content;
 }
 
-.pok-mon-details .text-description {
+.pokemon-details .text-description {
   align-self: stretch;
   color: var(--grayscaledark);
   flex: 1;
@@ -271,7 +271,7 @@
 }
 
 /* -------------------------- Update color ---------------------*/
-.pok-mon-details .text-wrapper-4 {
+.pokemon-details .text-wrapper-4 {
   color: var(--grayscalewireframe);
   font-family: var(--header-subtitle-1-font-family);
   font-size: var(--header-subtitle-1-font-size);
@@ -284,7 +284,7 @@
   width: 312px;
 }
 
-.pok-mon-details .text-wrapper-5 {
+.pokemon-details .text-wrapper-5 {
   color: var(--grayscalewireframe);
   font-family: var(--header-subtitle-3-font-family);
   font-size: var(--header-subtitle-3-font-size);
@@ -298,7 +298,7 @@
   width: 27px;
 }
 
-.pok-mon-details .base-stats {
+.pokemon-details .base-stats {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--grayscalewhite);
@@ -309,7 +309,7 @@
   width: 100%;
 }
 
-.pok-mon-details .label {
+.pokemon-details .label {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -320,7 +320,7 @@
 
 
 
-.pok-mon-details .data {
+.pokemon-details .data {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -331,7 +331,7 @@
 
 
 
-.pok-mon-details .chart {
+.pokemon-details .chart {
   align-items: flex-start;
   display: flex;
   flex: 1;
@@ -340,7 +340,7 @@
   position: relative;
 }
 
-.pok-mon-details .chart-2 {
+.pokemon-details .chart-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -352,7 +352,7 @@
 }
 
 /* -------------------------- Update width value ---------------------*/
-.pok-mon-details .value {
+.pokemon-details .value {
   align-items: flex-start;
   align-self: stretch;
   border-radius: 4px;
@@ -364,7 +364,7 @@
   width: 100%;
 }
 
-.pok-mon-details .retangle {
+.pokemon-details .retangle {
   background-color: var(--grayscalewireframe);
   flex: 1;
   flex-grow: 1;
@@ -372,7 +372,7 @@
   position: relative;
 }
 
-.pok-mon-details .pokeball-instance {
+.pokemon-details .pokeball-instance {
   height: 208px !important;
   left: 144px !important;
   position: absolute !important;

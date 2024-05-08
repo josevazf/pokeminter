@@ -1,5 +1,4 @@
 // @ts-nocheck
-import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
 import { ChevronLeft } from "../../icons/ChevronLeft/ChevronLeft";
 import { ChevronRight } from "../../icons/ChevronRight/ChevronRight";
@@ -10,22 +9,22 @@ import { Silhouette } from "../Silhouette/Silhouette";
 import { TypeChips } from "../TypeChips/TypeChips";
 import { typeColors } from "../../utils/typeRefs";
 import { Button } from "@mui/material";
+import { MintButton } from "../MintButton/MintButton";
 import "./style.css";
-
-interface Props {
-  pokemons: any[];
-  pokemonSpecies: any[];
-  id: number;
-}
 
 export const PokeMonDetails = ({
   pokemons,
   pokemonSpecies,
   id,
-}: Props): JSX.Element => {
+}: {
+  pokemons: any[];
+  pokemonSpecies: any[];
+  id: number;
+}) => {
 
   // Handle pokemon change to previous or next
   const [currentId, setCurrentId] = useState(id);
+
   useEffect(() => {
     setCurrentId(id);
   }, [id]);
@@ -45,13 +44,13 @@ export const PokeMonDetails = ({
   // Check number of types to render
   const renderTypeChips = () => {
     if (pokemons[currentId].data.types.length === 1)
-      return <TypeChips className="type-chips-instance" type={pokemons[currentId].data.types[0].type.name}/>;
+      return <TypeChips className="type-chips-instance" type={pokemons[currentId].data.types[0].type.name} />;
     else if (pokemons[currentId].data.types.length === 2) {
       return (
         <div >
-            <TypeChips className="type-chips-instance" type={pokemons[currentId].data.types[0].type.name}/>
+          <TypeChips className="type-chips-instance" type={pokemons[currentId].data.types[0].type.name} />
           <> </>
-            <TypeChips className="type-chips-instance" type={pokemons[currentId].data.types[1].type.name}/>
+          <TypeChips className="type-chips-instance" type={pokemons[currentId].data.types[1].type.name} />
         </div>
       );
     }
@@ -88,25 +87,25 @@ export const PokeMonDetails = ({
 
   return (
 
-    <div className="pok-mon-details" style={{ backgroundColor: typeColors[pokemons[currentId].data.types[0].type.name.toLowerCase()]}}>
+    <div className="pokemon-details" style={{ backgroundColor: typeColors[pokemons[currentId].data.types[0].type.name.toLowerCase()] }}>
       <div className="title">
-        <div className="pok-mon-name">{name}</div>
+        <div className="pokemon-name">{name}</div>
         <div className="element">{`#${String(number).padStart(3, '0')}`}</div>
       </div>
       <div className="image">
         <Button onClick={handlePrev}>
-          <ChevronLeft className="icon-instance-node"/>
+          <ChevronLeft className="icon-instance-node" />
         </Button>
         <Button onClick={handleNext}>
-        <ChevronRight className="icon-instance-node"/>
+          <ChevronRight className="icon-instance-node" />
         </Button>
-        <Silhouette className="silhouette-instance" image={image}/>
+        <Silhouette className="silhouette-instance" image={image} />
       </div>
       <div className="card">
         <div className="div">
           {renderTypeChips()}
         </div>
-        <div className="text-wrapper" style={{color: color}}>About</div>
+        <div className="text-wrapper" style={{ color: color }}>About</div>
         <div className="attribute">
           <div className="frame">
             <div className="frame-2">
@@ -135,15 +134,15 @@ export const PokeMonDetails = ({
           </div>
         </div>
         <p className="text-description">{description}</p>
-        <div className="text-wrapper-4" style={{color: color}}>Base Stats</div>
+        <div className="text-wrapper-4" style={{ color: color }}>Base Stats</div>
         <div className="base-stats">
           <div className="label">
-            <div className="text-wrapper-5" style={{color: color}}>HP</div>
-            <div className="text-wrapper-5" style={{color: color}}>ATK</div>
-            <div className="text-wrapper-5" style={{color: color}}>DEF</div>
-            <div className="text-wrapper-5" style={{color: color}}>SATK</div>
-            <div className="text-wrapper-5" style={{color: color}}>SDEF</div>
-            <div className="text-wrapper-5" style={{color: color}}>SPD</div>
+            <div className="text-wrapper-5" style={{ color: color }}>HP</div>
+            <div className="text-wrapper-5" style={{ color: color }}>ATK</div>
+            <div className="text-wrapper-5" style={{ color: color }}>DEF</div>
+            <div className="text-wrapper-5" style={{ color: color }}>SATK</div>
+            <div className="text-wrapper-5" style={{ color: color }}>SDEF</div>
+            <div className="text-wrapper-5" style={{ color: color }}>SPD</div>
           </div>
           <div className="divider" />
           <div className="data">
@@ -156,51 +155,46 @@ export const PokeMonDetails = ({
           </div>
           <div className="chart">
             <div className="chart-2">
-              <div className="value" style={{width: `${parseInt(HP) / 255 * 100}%`}}>
-                <div className="retangle" style={{ backgroundColor: color}}/>
+              <div className="value" style={{ width: `${parseInt(HP) / 255 * 100}%` }}>
+                <div className="retangle" style={{ backgroundColor: color }} />
               </div>
-              <div className="background" style={{ backgroundColor: color}}/>
+              <div className="background" style={{ backgroundColor: color }} />
             </div>
             <div className="chart-2">
-              <div className="value" style={{width: `${parseInt(ATK) / 255 * 100}%`}}>
-                <div className="retangle" style={{ backgroundColor: color}}/>
+              <div className="value" style={{ width: `${parseInt(ATK) / 255 * 100}%` }}>
+                <div className="retangle" style={{ backgroundColor: color }} />
               </div>
-              <div className="background" style={{ backgroundColor: color}}/>
+              <div className="background" style={{ backgroundColor: color }} />
             </div>
             <div className="chart-2">
-              <div className="value" style={{width: `${parseInt(DEF) / 255 * 100}%`}}>
-                <div className="retangle" style={{ backgroundColor: color}}/>
+              <div className="value" style={{ width: `${parseInt(DEF) / 255 * 100}%` }}>
+                <div className="retangle" style={{ backgroundColor: color }} />
               </div>
-              <div className="background" style={{ backgroundColor: color}}/>
+              <div className="background" style={{ backgroundColor: color }} />
             </div>
             <div className="chart-2">
-              <div className="value" style={{width: `${parseInt(SATK) / 255 * 100}%`}}>
-                <div className="retangle" style={{ backgroundColor: color}}/>
+              <div className="value" style={{ width: `${parseInt(SATK) / 255 * 100}%` }}>
+                <div className="retangle" style={{ backgroundColor: color }} />
               </div>
-              <div className="background" style={{ backgroundColor: color}}/>
+              <div className="background" style={{ backgroundColor: color }} />
             </div>
             <div className="chart-2">
-              <div className="value" style={{width: `${parseInt(SDEF) / 255 * 100}%`}}>
-                <div className="retangle" style={{ backgroundColor: color}}/>
+              <div className="value" style={{ width: `${parseInt(SDEF) / 255 * 100}%` }}>
+                <div className="retangle" style={{ backgroundColor: color }} />
               </div>
-              <div className="background" style={{ backgroundColor: color}}/>
+              <div className="background" style={{ backgroundColor: color }} />
             </div>
             <div className="chart-2">
-              <div className="value" style={{width: `${parseInt(SPD) / 255 * 100}%`}}>
-                <div className="retangle" style={{ backgroundColor: color}}/>
+              <div className="value" style={{ width: `${parseInt(SPD) / 255 * 100}%` }}>
+                <div className="retangle" style={{ backgroundColor: color }} />
               </div>
-              <div className="background" style={{ backgroundColor: color}}/>
+              <div className="background" style={{ backgroundColor: color }} />
             </div>
           </div>
         </div>
       </div>
       <Pokeball className="pokeball-instance" />
+      <div className="div" ><MintButton id={currentId + 1} /></div>
     </div>
   );
-};
-
-PokeMonDetails.propTypes = {
-  pokemons: PropTypes.any,
-  pokemonSpecies: PropTypes.any,
-  id: PropTypes.number,
 };

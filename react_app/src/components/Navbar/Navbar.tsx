@@ -50,7 +50,8 @@ export default function Navbar({ pokemonFilter }: { pokemonFilter: (value: strin
     <>
       <AppBar position="sticky" elevation={0} sx={{ backgroundColor: "white" }}>
         <Toolbar sx={{ justifyContent: 'space-between'}}>
-          <Box component="img" src="/assets/pokeminter_ns_logo.png" height="4em" ></Box>
+        <a href="https://github.com/josevazf/pokeminter"><img src="/assets/pokeminter_ns_logo.png" height="70em"></img></a>
+        
             <div>
               <Search onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 pokemonFilter(e.target.value)
