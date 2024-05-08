@@ -270,7 +270,6 @@
   text-align: justify;
 }
 
-/* -------------------------- Update color ---------------------*/
 .pokemon-details .text-wrapper-4 {
   color: var(--grayscalewireframe);
   font-family: var(--header-subtitle-1-font-family);
@@ -318,8 +317,6 @@
   position: relative;
 }
 
-
-
 .pokemon-details .data {
   align-items: flex-start;
   display: inline-flex;
@@ -328,8 +325,6 @@
   padding: 0px 0px 0px 4px;
   position: relative;
 }
-
-
 
 .pokemon-details .chart {
   align-items: flex-start;
@@ -351,7 +346,6 @@
   width: 100%;
 }
 
-/* -------------------------- Update width value ---------------------*/
 .pokemon-details .value {
   align-items: flex-start;
   align-self: stretch;

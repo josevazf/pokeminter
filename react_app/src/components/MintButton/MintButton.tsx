@@ -15,12 +15,16 @@ export function MintButton({ id }: { id: number }) {
   const { openConnectModal } = useConnectModal();
   const chainId = useChainId();
 
+
   var contractAddress = "";
+  var scannerUrl = "";
 
   if (chainId === sepolia.id) {
-    contractAddress = sepoliaAddress; 
+    contractAddress = sepoliaAddress;
+    scannerUrl = sepolia.blockExplorers.default.url;
   } else if (chainId === baseSepolia.id) {
     contractAddress = baseSepoliaAddress;
+    scannerUrl = baseSepolia.blockExplorers.default.url;
   }
 
   const {
@@ -38,7 +42,7 @@ export function MintButton({ id }: { id: number }) {
   return (
     <>
       <button
-        className="close-btn"
+        className="mint-btn"
         width={"100px"}
         type="submit"
         disabled={isPending}
@@ -55,10 +59,9 @@ export function MintButton({ id }: { id: number }) {
         }
        >
       <img height={"80px"} src="/assets/pokeball_icon.png"></img>
-      {isPending ? <div>Trying...</div> : isConfirming ? <div>Catching...</div> : <div>Catch</div>}
+      {isPending ? <div>Trying...</div> : isConfirming ? <div>Catching...</div> : isConfirmed ? <div><div>Gotcha!</div><div><a target={"_blank"} href={`${scannerUrl}/tx/${hash}`}>
+        Transaction details</a></div></div> : <div>Catch</div>}
       {/* {hash && <div>Transaction Hash: {hash}</div>} */}
-      {isConfirmed && <div><a target={"_blank"} href={`https://sepolia.etherscan.io/tx/${hash}`}>
-        Transaction details</a></div>}
       {error && (
         <div style={{fontFamily: "Poppins", color: "#CC0000"}} >{(error as BaseError).shortMessage}</div>
       )}

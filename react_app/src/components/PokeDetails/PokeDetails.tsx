@@ -12,7 +12,7 @@ import { Button } from "@mui/material";
 import { MintButton } from "../MintButton/MintButton";
 import "./style.css";
 
-export const PokeMonDetails = ({
+export const PokemonDetails = ({
   pokemons,
   pokemonSpecies,
   id,
