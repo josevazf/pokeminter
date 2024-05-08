@@ -54,17 +54,17 @@ To run the scripts (installed globally):
 </ul>
 
 ## 🚀 Installation
-
+To run the app:
 ```SH
 $ git clone https://github.com/josevazf/pokeminter.git
 $ cd react-app
 $ npm install
 $ npm start
 ```
-
 The application will open in the browser on http://localhost:3000
 
-To run the scripts 
+The number of Pokemon SVGs and JSONs to be created can be changed from inside the scripts (default is 151)
+To run the scripts:
 ```SH
 $ cd react-app/scripts
 # generate SVG and JSON files
