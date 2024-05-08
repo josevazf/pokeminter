@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 var pokemonLimit = 151;
-var ipfs_svg_CID = "Qme5EPeL6jnsStN13p176zbVXY1dFp86idD2Ls6xcpHFKN";
+var ipfs_svg_CID = "QmXBi35D6XBvZPvugHjnvCLTobkEtDLSvChHB8Fs2HZvZE";
 
 function updateNFTMetadata(filePath: string, imageUrl: string) {
   var jsonFile = fs.readFileSync(filePath, 'utf-8');

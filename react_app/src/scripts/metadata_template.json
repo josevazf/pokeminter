@@ -2,7 +2,7 @@
   "name": "{name}",
   "id": "{number}",
   "description": "{description}",
-  "image": "{link}",
+  "image_data": "{link}",
   "external_url": "https://pokeminter.vercel.app",
   "attributes": [
     {
