@@ -67,8 +67,10 @@ The application will open in the browser on http://localhost:3000
 To run the scripts 
 ```SH
 $ cd react-app/scripts
-$ tsx 
-$ npm start
+# generate SVG and JSON files
+$ tsx generate_svgs_json.ts
+# after uploading the SVGs to IPFS, update `update_json.ts` script with the new CID
+$ tsx update_jsons.ts
 ```
 
 ## 🔮 Future Improvements
