@@ -3,7 +3,7 @@
 
 ## 👁️ Overview
 This project was built using React (create-react-app with typescript), Axios to fetch data from the PokeApi, MUI components to ease up on the UI creation, RainbowKit to provide the “Connect Pokédex” button (aka wallet), Wagmi to glue the frontend with the EVM, and some scripts to automatically generate the Pokemon SVG’s and metadata JSON files.
-The NFT contracts where developed according to the ERC721URIStorage standard implementation with a little twist to limit the Pokémon minting to 1 of each per wallet. They were deployed on Sepolia and Sepolia Base testnets.
+The NFT contracts where developed according to the ERC721URIStorage standard implementation with a little twist to limit the Pokémon NFT minting to 1 of each per wallet. They were deployed on Sepolia and Sepolia Base testnets.
 
 The number of Pokémons rendered is limited to 151 (considering these the OG's) and also because all of them are rendered on each load of the page, this is something to work on and updgrade later on.
 There is a search bar that filters the Pokémons showed based on the input text.
