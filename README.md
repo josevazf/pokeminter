@@ -19,6 +19,10 @@ Deployed contracts:
 - Sepolia Testnet: https://sepolia.etherscan.io/address/0x35c6D97EaAcA055480e3471C1045e4659F9371e7
 - Base Sepolia Testnet: https://sepolia.basescan.org/address/0x4e7a8e08f86f1653669ea9e26388268b1210eb3f
 
+OpenSea collections:
+- Sepolia Testnet: https://testnets.opensea.io/collection/pokeminter-sepolia
+- Base Sepolia Testnet: https://testnets.opensea.io/collection/pokeminter-base-sepolia
+- 
 ![image](https://github.com/josevazf/pokeminter/assets/19204122/46236e98-a2b9-4c06-853c-760e86076cb6)
 
 ## 🛠️ Technologies
