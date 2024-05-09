@@ -53,10 +53,10 @@ export const Home = () => {
       setPokemonSpecies(pokemonSpeciesAll);
       return;
     }
-    var filteredPokemons = pokemons.filter((pokemon: any) =>
+    var filteredPokemons = pokemonAll.filter((pokemon: any) =>
       pokemon.data.name.includes(name.toLowerCase())
     );
-    var filteredPokemonSpecies = pokemonSpecies.filter((pokemonSpecies: any) =>
+    var filteredPokemonSpecies = pokemonSpeciesAll.filter((pokemonSpecies: any) =>
       pokemonSpecies.data.name.includes(name.toLowerCase())
     );
     setPokemons(filteredPokemons);
