@@ -53,7 +53,7 @@ export default function PokeCard({ pokemons, pokemonSpecies, name, image, types,
             alt={name}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" align='center' component="div" style={{ textTransform: 'capitalize' }}>
+            <Typography gutterBottom variant="h5" align='center' component="div" style={{ textTransform: 'capitalize', fontFamily: "Poppins", fontWeight: "400" }}>
               {name}
             </Typography>
             <Typography variant="body2" align='center'>

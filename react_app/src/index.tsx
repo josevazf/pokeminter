@@ -7,7 +7,7 @@ import "./styleguide.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig, lightTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi';
 import {
   baseSepolia,
@@ -33,7 +33,11 @@ root.render(
   <React.StrictMode>
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
+        <RainbowKitProvider theme={lightTheme({
+          accentColor: '#3B4CCA',
+          accentColorForeground: 'white',
+          borderRadius: 'medium',
+        })}>
           <App />
         </RainbowKitProvider>
       </QueryClientProvider>

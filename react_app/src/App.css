@@ -27,8 +27,24 @@
 } 
 
 .App-link {
-  color: #61dafb;
+  color: #2c2c2c;
 }
+
+a:link {
+	color: #3B4CCA;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	a:visited {
+	color: #3B4CCA;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	a:hover {
+	color: #3B4CCA;
+	background-color: transparent;
+	text-decoration: underline;
+	}
 
 .pokeType {
   width: 40%;
@@ -42,10 +58,13 @@
 .pokeType .group {
   background-color: grey;
   color: white;
-  padding: 0.3rem;
+  align-items: center;
+  padding: 0.2rem;
+  padding-top: 0.4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-size: 12px;
+  font-weight: bold;
   border-radius: 15px;
   margin-right: 0.5rem;
 }
