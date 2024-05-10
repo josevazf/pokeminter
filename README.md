@@ -23,7 +23,7 @@ OpenSea collections:
 - Sepolia Testnet: https://testnets.opensea.io/collection/pokeminter-sepolia
 - Base Sepolia Testnet: https://testnets.opensea.io/collection/pokeminter-base-sepolia
 
-![image](https://github.com/josevazf/pokeminter/assets/19204122/c29c2d9f-766f-4c66-9cd0-053198ba8c81)
+![image](https://github.com/josevazf/pokeminter/assets/19204122/6f38ae51-96a9-46cf-b5c3-25be478ce1fd)
 
 ## 🛠️ Technologies
 
