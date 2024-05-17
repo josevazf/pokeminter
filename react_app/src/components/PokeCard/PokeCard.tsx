@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 import { typeColors } from '../../utils/typeRefs';
 import PokeModal from "../PokeModal/PokeModal";
 
-export default function PokeCard({ pokemons, pokemonSpecies, name, image, types, id }: { pokemons: any[], pokemonSpecies: any[],  name: string, image: string, types: any[], id: number }) {
+export default function PokeCard({ pokemons, pokemonSpecies, name, image, types, id }: { pokemons: any[], pokemonSpecies: any[], name: string, image: string, types: any[], id: number }) {
   const [showModal, setShowModal] = useState(false)
   const handleClose = () => { setShowModal(false) }
 
@@ -23,6 +23,7 @@ export default function PokeCard({ pokemons, pokemonSpecies, name, image, types,
     return "Ooooops...";
   };
 
+  // Fix male and female symbols
   if (name === "nidoran-m") {
     name = name.replace(/-m/g, "\u2642");
   } else if (name === "nidoran-f") {
@@ -41,7 +42,7 @@ export default function PokeCard({ pokemons, pokemonSpecies, name, image, types,
         }}
         onClick={name !== "Not found" ? () => setShowModal(true) : undefined}>
         <CardActionArea>
-          <div style={{ textAlign: "right", paddingTop: "10px", paddingRight: "10px" }}>
+          <div style={{ textAlign: 'right', paddingTop: '10px', paddingRight: '10px', paddingBottom: '10px' }}>
             <Typography gutterBottom variant="caption">
               {`#${String(id).padStart(3, '0')}`}
             </Typography>

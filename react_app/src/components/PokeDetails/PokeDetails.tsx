@@ -12,16 +12,8 @@ import { Button } from "@mui/material";
 import { MintButton } from "../MintButton/MintButton";
 import "./style.css";
 
-export const PokemonDetails = ({
-  pokemons,
-  pokemonSpecies,
-  id,
-}: {
-  pokemons: any[];
-  pokemonSpecies: any[];
-  id: number;
-}) => {
-
+export function PokemonDetails({ pokemons, pokemonSpecies, id }: { pokemons: any[], pokemonSpecies: any[], id: number }) {
+  
   // Handle pokemon change to previous or next
   const [currentId, setCurrentId] = useState(id);
 
@@ -197,4 +189,4 @@ export const PokemonDetails = ({
       <div className="div" ><MintButton id={currentId + 1} /></div>
     </div>
   );
-};
+}

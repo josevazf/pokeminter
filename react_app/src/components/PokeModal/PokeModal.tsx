@@ -2,7 +2,7 @@ import React from 'react';
 import './PokeModal.style.css'
 import { PokemonDetails } from '../PokeDetails/PokeDetails';
 
-const PokeModal = ({pokemons, pokemonSpecies, id, handleClose}: { pokemons: any[], pokemonSpecies: any[], id: number, handleClose: () => void}) => {
+export default function PokeModal ({pokemons, pokemonSpecies, id, handleClose}: { pokemons: any[], pokemonSpecies: any[], id: number, handleClose: () => void}) {
  
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (e.target === e.currentTarget) {
@@ -17,6 +17,4 @@ const PokeModal = ({pokemons, pokemonSpecies, id, handleClose}: { pokemons: any[
         </div>
     </div>
   );
-};
-
-export default PokeModal;
+}

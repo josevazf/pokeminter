@@ -4,10 +4,10 @@ import Navbar from "../components/Navbar/Navbar";
 import axios from "axios";
 import PokeCard from "../components/PokeCard/PokeCard";
 import { Box, Container, Grid } from "@mui/material";
-/* import Footer from "../components/Footer/Footer"; */
 
 export const Home = () => {
   const [pokemons, setPokemons] = useState([]);
+  // eslint-disable-next-line
   const [pokemonSpecies, setPokemonSpecies] = useState([]);
   const [pokemonAll, setPokemonAll] = useState([]);
   const [pokemonSpeciesAll, setPokemonSpeciesAll] = useState([]);
@@ -64,14 +64,14 @@ export const Home = () => {
   };
 
   return (
-    <Container style={{ maxWidth: '80%' }}>
-      <div style={{ margin: 'auto', maxWidth: '80%'}}>
-      <Navbar pokemonFilter={pokemonFilter}  />
-        <Container maxWidth={false} style={{ margin: 'auto'}}>
-          <Grid container component="div" spacing={5} >
+    <Container style={{ maxWidth: '80%', paddingBottom: '30px' }}>
+      <div style={{ margin: 'auto', maxWidth: '80%' }}>
+        <Navbar pokemonFilter={pokemonFilter} />
+        <Container maxWidth={false} style={{ margin: 'auto' }}>
+          <Grid container component='div' spacing={5} >
             {pokemons.length === 0 ? (
               <Grid item>
-                <PokeCard pokemons={[]} pokemonSpecies={[]} name="Not found" image="/assets/empty.png" types={[]} id={404} />
+                <PokeCard pokemons={[]} pokemonSpecies={[]} name='Not found' image='/assets/empty.png' types={[]} id={404} />
               </Grid>
             ) : (
               pokemons.map((pokemon: any, key: number) => (
@@ -92,7 +92,6 @@ export const Home = () => {
           </Grid>
         </Container>
       </div>
-      {/* <Footer/> */}
     </Container>
-  )
+  );
 }

@@ -58,8 +58,8 @@ export function MintButton({ id }: { id: number }) {
         }
         }
        >
-      <img height={"80px"} src="/assets/pokeball_icon.png"></img>
-      {isPending ? <div>Trying...</div> : isConfirming ? <div>Catching...</div> : isConfirmed ? <div><div>Gotcha!</div><div><a target={"_blank"} href={`${scannerUrl}/tx/${hash}`}>
+      <img height={"80px"} src="/assets/pokeball_icon.png" alt="pokeball-icon"></img>
+      {isPending ? <div>Trying...</div> : isConfirming ? <div>Catching...</div> : isConfirmed ? <div><div>Gotcha!</div><div><a target={"_blank"} rel={"noreferrer"} href={`${scannerUrl}/tx/${hash}`}>
         Transaction details</a></div></div> : <div>Catch</div>}
       {/* {hash && <div>Transaction Hash: {hash}</div>} */}
       {error && (
