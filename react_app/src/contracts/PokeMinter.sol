@@ -20,7 +20,7 @@ contract PokeMinter is ERC721URIStorage {
         return hasMintedPokemon[_user][_id];
     }
 
-    //Function to mint NFT according to the house index
+    // Function to mint NFT according to Pokémon index number
     function mintNFT(address recipient, uint256 _id) public {
         require(!hasMintedPokemon[recipient][_id], "You already have that Pokemon! Go catch another one...");
         uint256 tokenId = s_tokenCounter;
